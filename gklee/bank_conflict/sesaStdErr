@@ -1,0 +1,94 @@
+KLEE: output directory = "klee-out-37"
+KLEE: WARNING: undefined reference to function: __clear_device
+KLEE: WARNING: undefined reference to function: __clear_host
+KLEE: WARNING: undefined reference to function: __set_CUDAConfig
+KLEE: WARNING: undefined reference to function: __set_device
+KLEE: WARNING: undefined reference to function: __set_host
+KLEE: WARNING: undefined reference to function: max
+KLEE: WARNING: undefined reference to function: printf
+KLEE: WARNING: undefined reference to variable: threadIdx
+  store i32 %9, i32* %13, align 4, !dbg !726
+  store i32 %9, i32* %13, align 4, !dbg !726
+128
+0
+  store i32 %19, i32* %23, align 4, !dbg !728
+  store i32 %19, i32* %23, align 4, !dbg !728
+128
+0
+  store i32 %29, i32* %33, align 4, !dbg !730
+  store i32 %29, i32* %33, align 4, !dbg !730
+128
+0
+  %38 = load i32* %37, align 4, !dbg !732
+  %38 = load i32* %37, align 4, !dbg !732
+128
+0
+KLEE: WARNING: attempt to print symbolic argument!
+
+KLEE: WARNING: calling external: printf(, )
+KLEE: WARNING: attempt to print symbolic argument!
+
+KLEE: WARNING: attempt to print symbolic argument!
+
+KLEE: WARNING: attempt to print symbolic argument!
+
+KLEE: WARNING: attempt to print symbolic argument!
+
+KLEE: WARNING: attempt to print symbolic argument!
+
+KLEE: WARNING: attempt to print symbolic argument!
+
+KLEE: WARNING: attempt to print symbolic argument!
+
+KLEE: WARNING: attempt to print symbolic argument!
+
+KLEE: WARNING: attempt to print symbolic argument!
+
+KLEE: WARNING: attempt to print symbolic argument!
+
+KLEE: WARNING: attempt to print symbolic argument!
+
+KLEE: WARNING: attempt to print symbolic argument!
+
+KLEE: WARNING: attempt to print symbolic argument!
+
+KLEE: WARNING: attempt to print symbolic argument!
+
+KLEE: WARNING: attempt to print symbolic argument!
+
+KLEE: WARNING: attempt to print symbolic argument!
+
+KLEE: WARNING: attempt to print symbolic argument!
+
+KLEE: WARNING: attempt to print symbolic argument!
+
+KLEE: WARNING: attempt to print symbolic argument!
+
+KLEE: WARNING: attempt to print symbolic argument!
+
+KLEE: WARNING: attempt to print symbolic argument!
+
+KLEE: WARNING: attempt to print symbolic argument!
+
+KLEE: WARNING: attempt to print symbolic argument!
+
+KLEE: WARNING: attempt to print symbolic argument!
+
+KLEE: WARNING: attempt to print symbolic argument!
+
+KLEE: WARNING: attempt to print symbolic argument!
+
+KLEE: WARNING: attempt to print symbolic argument!
+
+KLEE: WARNING: attempt to print symbolic argument!
+
+KLEE: WARNING: attempt to print symbolic argument!
+
+KLEE: WARNING: attempt to print symbolic argument!
+
+KLEE: WARNING: attempt to print symbolic argument!
+
+
+KLEE: done: total instructions = 2035
+KLEE: done: completed paths = 1
+KLEE: done: generated tests = 1

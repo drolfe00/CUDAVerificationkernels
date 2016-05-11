@@ -1,0 +1,22 @@
+KLEE: output directory = "klee-out-5"
+KLEE: WARNING: undefined reference to function: __clear_device
+KLEE: WARNING: undefined reference to function: __clear_host
+KLEE: WARNING: undefined reference to function: __set_CUDAConfig
+KLEE: WARNING: undefined reference to function: __set_device
+KLEE: WARNING: undefined reference to function: __set_host
+KLEE: WARNING: undefined reference to variable: blockDim
+KLEE: WARNING: undefined reference to variable: blockIdx
+KLEE: WARNING: undefined reference to function: fprintf
+KLEE: WARNING: undefined reference to function: printf
+KLEE: WARNING: undefined reference to variable: stderr
+KLEE: WARNING: undefined reference to variable: threadIdx
+  %26 = load i32* %25, align 4, !dbg !991
+  store i32 %15, i32* %20, align 4, !dbg !988
+4
+4
+KLEE: ERROR: /home/dan/classes/rigorousSystemDesign/project/sourceFiles/gklee/tutorial/tutorial.cpp:66: execution halts on encounering a (global) race
+KLEE: NOTE: now ignoring this error at this location
+
+KLEE: done: total instructions = 5744
+KLEE: done: completed paths = 1
+KLEE: done: generated tests = 1

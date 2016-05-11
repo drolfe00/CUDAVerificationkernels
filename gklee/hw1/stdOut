@@ -1,0 +1,817 @@
+Tue May 10 04:31:20 MDT 2016
+Configuration: concurrency bug checking level is: 2
+
+[GKLEE]: The configuration, Grid: <1, 1, 1>, Block: <32, 1, 1>
+
+[GKLEE]: Start executing a GPU kernel 
+
+[GKLEE]: 'True' path flow feasible !
+[GKLEE]: 'Else' path flow infeasible !
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <0, 0>, <10, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 1
+Under symbolic configuration, Across 0 BIs, Total Time: 0
+After exploring 1 paths, the average exploration time (symbolic) is 0s, the total execution time: 0s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <0, 0>, <10, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 2
+Under symbolic configuration, Across 0 BIs, Total Time: 0
+After exploring 2 paths, the average exploration time (symbolic) is 0s, the total execution time: 0s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <0, 0>, <10, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 3
+Under symbolic configuration, Across 0 BIs, Total Time: 0
+After exploring 3 paths, the average exploration time (symbolic) is 0s, the total execution time: 0s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+Thread 0 reaches a barrier: moving to the next thread.
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking bank conflicts at SharedMemory  **********
+[GKLEE]: The read set is empty in bank conflict checking for capability 2.x
+[GKLEE]: The write set is empty in bank conflict checking for capability 2.x
+[GKLEE]: ********** No Bank Conflict found at this SharedMemory **********
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking coalesced device memory access at capability: 2.x **********
+[GKLEE]: The read set for memory coalescing cap 2 is empty
+[GKLEE]: The write set for memory coalescing cap 2 is empty
+[GKLEE]: ********** All memory accesses are coalesced at capability: 2.x **********
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking warp divergence  **********
+[GKLEE]: ********** Warp Divergence not found for this kernel **********
+
+[GKLEE]: ********** (Symbolic Config) Start checking missed volatile at SharedMemory  ********** 
+[GKLEE]: ********** No 'Volatile' Qualifier Missed at this SharedMemory **********
+
+[GKLEE]: ********** (Symbolic Config) Start checking races at SharedMemory  **********
+[GKLEE]: ++++++++++ Read-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ++++++++++ Write-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ********** no races found at SharedMemory ***********
+
+[GKLEE]: ********** (Symbolic Config) Start checking races at DeviceMemory (Within Same Block)  **********
+[GKLEE]: ++++++++++ Read-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ++++++++++ Write-Write race checking (Pure Canonical Schedule) ++++++++++
+
+[GKLEE]: ********** (Symbolic Config) Checking races at DeviceMemory (Across Blocks) not allowed (number of block > 1)  **********
+[GKLEE]: ********* no races found at DeviceMemory **********
+[GKLEE]: Within the current Barrier Interval, 1 flows are used to represent all threads !
+
+[GKLEE]: Finish executing a GPU kernel 
+
+[GKLEE]: GPU Execution time: 0.221531s
+[GKLEE]: In Barrier Interval 1, Elapsed time for symbolic configuration (Parametric Flow): 0.180723
+x = -0.000000, a = 2.000000, y = 3.000000, i = 1, size = 10  failed to add
+
+[GKLEE]: The configuration, Grid: <1, 1, 1>, Block: <32, 1, 1>
+
+[GKLEE]: Start executing a GPU kernel 
+
+[GKLEE]: 'True' path flow feasible !
+[GKLEE]: 'Else' path flow infeasible !
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <0, 0>, <10, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 4
+<BI: 1, Time: 0.180723>
+Under symbolic configuration, Across 1 BIs, Total Time: 0.180723
+After exploring 4 paths, the average exploration time (symbolic) is 0.0451807s, the total execution time: 0.180723s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <0, 0>, <10, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 5
+<BI: 1, Time: 0.180723>
+Under symbolic configuration, Across 1 BIs, Total Time: 0.180723
+After exploring 5 paths, the average exploration time (symbolic) is 0.0722892s, the total execution time: 0.361446s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <0, 0>, <10, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 6
+<BI: 1, Time: 0.180723>
+Under symbolic configuration, Across 1 BIs, Total Time: 0.180723
+After exploring 6 paths, the average exploration time (symbolic) is 0.0903615s, the total execution time: 0.542169s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+Thread 0 reaches a barrier: moving to the next thread.
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking bank conflicts at SharedMemory  **********
+[GKLEE]: The read set is empty in bank conflict checking for capability 2.x
+[GKLEE]: The write set is empty in bank conflict checking for capability 2.x
+[GKLEE]: ********** No Bank Conflict found at this SharedMemory **********
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking coalesced device memory access at capability: 2.x **********
+[GKLEE]: The read set for memory coalescing cap 2 is empty
+[GKLEE]: The write set for memory coalescing cap 2 is empty
+[GKLEE]: ********** All memory accesses are coalesced at capability: 2.x **********
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking warp divergence  **********
+[GKLEE]: ********** Warp Divergence not found for this kernel **********
+
+[GKLEE]: ********** (Symbolic Config) Start checking missed volatile at SharedMemory  ********** 
+[GKLEE]: ********** No 'Volatile' Qualifier Missed at this SharedMemory **********
+
+[GKLEE]: ********** (Symbolic Config) Start checking races at SharedMemory  **********
+[GKLEE]: ++++++++++ Read-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ++++++++++ Write-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ********** no races found at SharedMemory ***********
+
+[GKLEE]: ********** (Symbolic Config) Start checking races at DeviceMemory (Within Same Block)  **********
+[GKLEE]: ++++++++++ Read-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ++++++++++ Write-Write race checking (Pure Canonical Schedule) ++++++++++
+
+[GKLEE]: ********** (Symbolic Config) Checking races at DeviceMemory (Across Blocks) not allowed (number of block > 1)  **********
+[GKLEE]: ********* no races found at DeviceMemory **********
+[GKLEE]: Within the current Barrier Interval, 1 flows are used to represent all threads !
+
+[GKLEE]: Finish executing a GPU kernel 
+
+[GKLEE]: GPU Execution time: 0.454293s
+[GKLEE]: In Barrier Interval 1, Elapsed time for symbolic configuration (Parametric Flow): 0.183882
+x = -0.000000, a = -0.000000, y = 3.000000, i = 1, size = 10  failed to mul
+
+[GKLEE]: The configuration, Grid: <4, 1, 1>, Block: <32, 1, 1>
+
+[GKLEE]: Start executing a GPU kernel 
+
+[GKLEE]: 'True' path flow feasible !
+[GKLEE]: 'Else' path flow infeasible !
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <3, 0>, <4, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 7
+<BI: 1, Time: 0.180723>
+<BI: 2, Time: 0.183882>
+Under symbolic configuration, Across 2 BIs, Total Time: 0.364605
+After exploring 7 paths, the average exploration time (symbolic) is 0.129539s, the total execution time: 0.906774s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <3, 0>, <4, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 8
+<BI: 1, Time: 0.180723>
+<BI: 2, Time: 0.183882>
+Under symbolic configuration, Across 2 BIs, Total Time: 0.364605
+After exploring 8 paths, the average exploration time (symbolic) is 0.158922s, the total execution time: 1.27138s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <3, 0>, <4, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 9
+<BI: 1, Time: 0.180723>
+<BI: 2, Time: 0.183882>
+Under symbolic configuration, Across 2 BIs, Total Time: 0.364605
+After exploring 9 paths, the average exploration time (symbolic) is 0.181776s, the total execution time: 1.63598s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+Thread 0 reaches a barrier: moving to the next thread.
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking bank conflicts at SharedMemory  **********
+[GKLEE]: The read set is empty in bank conflict checking for capability 2.x
+[GKLEE]: The write set is empty in bank conflict checking for capability 2.x
+[GKLEE]: ********** No Bank Conflict found at this SharedMemory **********
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking coalesced device memory access at capability: 2.x **********
+[GKLEE]: The read set for memory coalescing cap 2 is empty
+[GKLEE]: The write set for memory coalescing cap 2 is empty
+[GKLEE]: ********** All memory accesses are coalesced at capability: 2.x **********
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking warp divergence  **********
+[GKLEE]: ********** Warp Divergence not found for this kernel **********
+
+[GKLEE]: ********** (Symbolic Config) Start checking missed volatile at SharedMemory  ********** 
+[GKLEE]: ********** No 'Volatile' Qualifier Missed at this SharedMemory **********
+
+[GKLEE]: ********** (Symbolic Config) Start checking races at SharedMemory  **********
+[GKLEE]: ++++++++++ Read-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ++++++++++ Write-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ********** no races found at SharedMemory ***********
+
+[GKLEE]: ********** (Symbolic Config) Start checking races at DeviceMemory (Within Same Block)  **********
+[GKLEE]: ++++++++++ Read-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ++++++++++ Write-Write race checking (Pure Canonical Schedule) ++++++++++
+
+[GKLEE]: ********** (Symbolic Config) Start checking races at DeviceMemory (Across Blocks)  **********
+[GKLEE]: ********* no races found at DeviceMemory **********
+[GKLEE]: Within the current Barrier Interval, 1 flows are used to represent all threads !
+
+[GKLEE]: Finish executing a GPU kernel 
+
+[GKLEE]: GPU Execution time: 0.973131s
+[GKLEE]: In Barrier Interval 1, Elapsed time for symbolic configuration (Parametric Flow): 0.18919
+x = -0.000000, a = 2.000000, y = 3.000000, i = 1, size = 100  failed to add
+
+[GKLEE]: The configuration, Grid: <4, 1, 1>, Block: <32, 1, 1>
+
+[GKLEE]: Start executing a GPU kernel 
+
+[GKLEE]: 'True' path flow feasible !
+[GKLEE]: 'Else' path flow infeasible !
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <3, 0>, <4, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 10
+<BI: 1, Time: 0.180723>
+<BI: 2, Time: 0.183882>
+<BI: 3, Time: 0.18919>
+Under symbolic configuration, Across 3 BIs, Total Time: 0.553795
+After exploring 10 paths, the average exploration time (symbolic) is 0.218978s, the total execution time: 2.18978s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <3, 0>, <4, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 11
+<BI: 1, Time: 0.180723>
+<BI: 2, Time: 0.183882>
+<BI: 3, Time: 0.18919>
+Under symbolic configuration, Across 3 BIs, Total Time: 0.553795
+After exploring 11 paths, the average exploration time (symbolic) is 0.249416s, the total execution time: 2.74357s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <3, 0>, <4, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 12
+<BI: 1, Time: 0.180723>
+<BI: 2, Time: 0.183882>
+<BI: 3, Time: 0.18919>
+Under symbolic configuration, Across 3 BIs, Total Time: 0.553795
+After exploring 12 paths, the average exploration time (symbolic) is 0.274781s, the total execution time: 3.29737s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+Thread 0 reaches a barrier: moving to the next thread.
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking bank conflicts at SharedMemory  **********
+[GKLEE]: The read set is empty in bank conflict checking for capability 2.x
+[GKLEE]: The write set is empty in bank conflict checking for capability 2.x
+[GKLEE]: ********** No Bank Conflict found at this SharedMemory **********
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking coalesced device memory access at capability: 2.x **********
+[GKLEE]: The read set for memory coalescing cap 2 is empty
+[GKLEE]: The write set for memory coalescing cap 2 is empty
+[GKLEE]: ********** All memory accesses are coalesced at capability: 2.x **********
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking warp divergence  **********
+[GKLEE]: ********** Warp Divergence not found for this kernel **********
+
+[GKLEE]: ********** (Symbolic Config) Start checking missed volatile at SharedMemory  ********** 
+[GKLEE]: ********** No 'Volatile' Qualifier Missed at this SharedMemory **********
+
+[GKLEE]: ********** (Symbolic Config) Start checking races at SharedMemory  **********
+[GKLEE]: ++++++++++ Read-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ++++++++++ Write-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ********** no races found at SharedMemory ***********
+
+[GKLEE]: ********** (Symbolic Config) Start checking races at DeviceMemory (Within Same Block)  **********
+[GKLEE]: ++++++++++ Read-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ++++++++++ Write-Write race checking (Pure Canonical Schedule) ++++++++++
+
+[GKLEE]: ********** (Symbolic Config) Start checking races at DeviceMemory (Across Blocks)  **********
+[GKLEE]: ********* no races found at DeviceMemory **********
+[GKLEE]: Within the current Barrier Interval, 1 flows are used to represent all threads !
+
+[GKLEE]: Finish executing a GPU kernel 
+
+[GKLEE]: GPU Execution time: 1.54666s
+[GKLEE]: In Barrier Interval 1, Elapsed time for symbolic configuration (Parametric Flow): 0.192831
+x = -0.000000, a = -0.000000, y = 3.000000, i = 1, size = 100  failed to mul
+
+[GKLEE]: The configuration, Grid: <32, 1, 1>, Block: <32, 1, 1>
+
+[GKLEE]: Start executing a GPU kernel 
+
+[GKLEE]: 'True' path flow feasible !
+[GKLEE]: 'Else' path flow infeasible !
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <31, 0>, <12, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 13
+<BI: 1, Time: 0.180723>
+<BI: 2, Time: 0.183882>
+<BI: 3, Time: 0.18919>
+<BI: 4, Time: 0.192831>
+Under symbolic configuration, Across 4 BIs, Total Time: 0.746626
+After exploring 13 paths, the average exploration time (symbolic) is 0.311077s, the total execution time: 4.04399s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <31, 0>, <12, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 14
+<BI: 1, Time: 0.180723>
+<BI: 2, Time: 0.183882>
+<BI: 3, Time: 0.18919>
+<BI: 4, Time: 0.192831>
+Under symbolic configuration, Across 4 BIs, Total Time: 0.746626
+After exploring 14 paths, the average exploration time (symbolic) is 0.342187s, the total execution time: 4.79062s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <31, 0>, <12, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 15
+<BI: 1, Time: 0.180723>
+<BI: 2, Time: 0.183882>
+<BI: 3, Time: 0.18919>
+<BI: 4, Time: 0.192831>
+Under symbolic configuration, Across 4 BIs, Total Time: 0.746626
+After exploring 15 paths, the average exploration time (symbolic) is 0.36915s, the total execution time: 5.53725s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+Thread 0 reaches a barrier: moving to the next thread.
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking bank conflicts at SharedMemory  **********
+[GKLEE]: The read set is empty in bank conflict checking for capability 2.x
+[GKLEE]: The write set is empty in bank conflict checking for capability 2.x
+[GKLEE]: ********** No Bank Conflict found at this SharedMemory **********
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking coalesced device memory access at capability: 2.x **********
+[GKLEE]: The read set for memory coalescing cap 2 is empty
+[GKLEE]: The write set for memory coalescing cap 2 is empty
+[GKLEE]: ********** All memory accesses are coalesced at capability: 2.x **********
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking warp divergence  **********
+[GKLEE]: ********** Warp Divergence not found for this kernel **********
+
+[GKLEE]: ********** (Symbolic Config) Start checking missed volatile at SharedMemory  ********** 
+[GKLEE]: ********** No 'Volatile' Qualifier Missed at this SharedMemory **********
+
+[GKLEE]: ********** (Symbolic Config) Start checking races at SharedMemory  **********
+[GKLEE]: ++++++++++ Read-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ++++++++++ Write-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ********** no races found at SharedMemory ***********
+
+[GKLEE]: ********** (Symbolic Config) Start checking races at DeviceMemory (Within Same Block)  **********
+[GKLEE]: ++++++++++ Read-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ++++++++++ Write-Write race checking (Pure Canonical Schedule) ++++++++++
+
+[GKLEE]: ********** (Symbolic Config) Start checking races at DeviceMemory (Across Blocks)  **********
+[GKLEE]: ********* no races found at DeviceMemory **********
+[GKLEE]: Within the current Barrier Interval, 1 flows are used to represent all threads !
+
+[GKLEE]: Finish executing a GPU kernel 
+
+[GKLEE]: GPU Execution time: 4.96489s
+[GKLEE]: In Barrier Interval 1, Elapsed time for symbolic configuration (Parametric Flow): 0.224007
+x = -0.000000, a = 2.000000, y = 3.000000, i = 1, size = 1000  failed to add
+
+[GKLEE]: The configuration, Grid: <32, 1, 1>, Block: <32, 1, 1>
+
+[GKLEE]: Start executing a GPU kernel 
+
+[GKLEE]: 'True' path flow feasible !
+[GKLEE]: 'Else' path flow infeasible !
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <31, 0>, <12, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 16
+<BI: 1, Time: 0.180723>
+<BI: 2, Time: 0.183882>
+<BI: 3, Time: 0.18919>
+<BI: 4, Time: 0.192831>
+<BI: 5, Time: 0.224007>
+Under symbolic configuration, Across 5 BIs, Total Time: 0.970633
+After exploring 16 paths, the average exploration time (symbolic) is 0.406743s, the total execution time: 6.50788s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <31, 0>, <12, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 17
+<BI: 1, Time: 0.180723>
+<BI: 2, Time: 0.183882>
+<BI: 3, Time: 0.18919>
+<BI: 4, Time: 0.192831>
+<BI: 5, Time: 0.224007>
+Under symbolic configuration, Across 5 BIs, Total Time: 0.970633
+After exploring 17 paths, the average exploration time (symbolic) is 0.439913s, the total execution time: 7.47851s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <31, 0>, <12, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 18
+<BI: 1, Time: 0.180723>
+<BI: 2, Time: 0.183882>
+<BI: 3, Time: 0.18919>
+<BI: 4, Time: 0.192831>
+<BI: 5, Time: 0.224007>
+Under symbolic configuration, Across 5 BIs, Total Time: 0.970633
+After exploring 18 paths, the average exploration time (symbolic) is 0.469397s, the total execution time: 8.44915s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+Thread 0 reaches a barrier: moving to the next thread.
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking bank conflicts at SharedMemory  **********
+[GKLEE]: The read set is empty in bank conflict checking for capability 2.x
+[GKLEE]: The write set is empty in bank conflict checking for capability 2.x
+[GKLEE]: ********** No Bank Conflict found at this SharedMemory **********
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking coalesced device memory access at capability: 2.x **********
+[GKLEE]: The read set for memory coalescing cap 2 is empty
+[GKLEE]: The write set for memory coalescing cap 2 is empty
+[GKLEE]: ********** All memory accesses are coalesced at capability: 2.x **********
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking warp divergence  **********
+[GKLEE]: ********** Warp Divergence not found for this kernel **********
+
+[GKLEE]: ********** (Symbolic Config) Start checking missed volatile at SharedMemory  ********** 
+[GKLEE]: ********** No 'Volatile' Qualifier Missed at this SharedMemory **********
+
+[GKLEE]: ********** (Symbolic Config) Start checking races at SharedMemory  **********
+[GKLEE]: ++++++++++ Read-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ++++++++++ Write-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ********** no races found at SharedMemory ***********
+
+[GKLEE]: ********** (Symbolic Config) Start checking races at DeviceMemory (Within Same Block)  **********
+[GKLEE]: ++++++++++ Read-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ++++++++++ Write-Write race checking (Pure Canonical Schedule) ++++++++++
+
+[GKLEE]: ********** (Symbolic Config) Start checking races at DeviceMemory (Across Blocks)  **********
+[GKLEE]: ********* no races found at DeviceMemory **********
+[GKLEE]: Within the current Barrier Interval, 1 flows are used to represent all threads !
+
+[GKLEE]: Finish executing a GPU kernel 
+
+[GKLEE]: GPU Execution time: 8.99586s
+[GKLEE]: In Barrier Interval 1, Elapsed time for symbolic configuration (Parametric Flow): 0.258872
+x = -0.000000, a = 5.000000, y = 3.000000, i = 0, size = 1000  failed to mul
+
+[GKLEE]: The configuration, Grid: <313, 1, 1>, Block: <32, 1, 1>
+
+[GKLEE]: Start executing a GPU kernel 
+
+[GKLEE]: 'True' path flow feasible !
+[GKLEE]: 'Else' path flow infeasible !
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <312, 0>, <16, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 19
+<BI: 1, Time: 0.180723>
+<BI: 2, Time: 0.183882>
+<BI: 3, Time: 0.18919>
+<BI: 4, Time: 0.192831>
+<BI: 5, Time: 0.224007>
+<BI: 6, Time: 0.258872>
+Under symbolic configuration, Across 6 BIs, Total Time: 1.2295
+After exploring 19 paths, the average exploration time (symbolic) is 0.509403s, the total execution time: 9.67865s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <312, 0>, <16, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 20
+<BI: 1, Time: 0.180723>
+<BI: 2, Time: 0.183882>
+<BI: 3, Time: 0.18919>
+<BI: 4, Time: 0.192831>
+<BI: 5, Time: 0.224007>
+<BI: 6, Time: 0.258872>
+Under symbolic configuration, Across 6 BIs, Total Time: 1.2295
+After exploring 20 paths, the average exploration time (symbolic) is 0.545408s, the total execution time: 10.9082s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <312, 0>, <16, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 21
+<BI: 1, Time: 0.180723>
+<BI: 2, Time: 0.183882>
+<BI: 3, Time: 0.18919>
+<BI: 4, Time: 0.192831>
+<BI: 5, Time: 0.224007>
+<BI: 6, Time: 0.258872>
+Under symbolic configuration, Across 6 BIs, Total Time: 1.2295
+After exploring 21 paths, the average exploration time (symbolic) is 0.577984s, the total execution time: 12.1377s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+Thread 0 reaches a barrier: moving to the next thread.
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking bank conflicts at SharedMemory  **********
+[GKLEE]: The read set is empty in bank conflict checking for capability 2.x
+[GKLEE]: The write set is empty in bank conflict checking for capability 2.x
+[GKLEE]: ********** No Bank Conflict found at this SharedMemory **********
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking coalesced device memory access at capability: 2.x **********
+[GKLEE]: The read set for memory coalescing cap 2 is empty
+[GKLEE]: The write set for memory coalescing cap 2 is empty
+[GKLEE]: ********** All memory accesses are coalesced at capability: 2.x **********
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking warp divergence  **********
+[GKLEE]: ********** Warp Divergence not found for this kernel **********
+
+[GKLEE]: ********** (Symbolic Config) Start checking missed volatile at SharedMemory  ********** 
+[GKLEE]: ********** No 'Volatile' Qualifier Missed at this SharedMemory **********
+
+[GKLEE]: ********** (Symbolic Config) Start checking races at SharedMemory  **********
+[GKLEE]: ++++++++++ Read-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ++++++++++ Write-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ********** no races found at SharedMemory ***********
+
+[GKLEE]: ********** (Symbolic Config) Start checking races at DeviceMemory (Within Same Block)  **********
+[GKLEE]: ++++++++++ Read-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ++++++++++ Write-Write race checking (Pure Canonical Schedule) ++++++++++
+
+[GKLEE]: ********** (Symbolic Config) Start checking races at DeviceMemory (Across Blocks)  **********
+[GKLEE]: ********* no races found at DeviceMemory **********
+[GKLEE]: Within the current Barrier Interval, 1 flows are used to represent all threads !
+
+[GKLEE]: Finish executing a GPU kernel 
+
+[GKLEE]: GPU Execution time: 40.9965s
+[GKLEE]: In Barrier Interval 1, Elapsed time for symbolic configuration (Parametric Flow): 0.571862
+x = -0.000000, a = 2.000000, y = 3.000000, i = 0, size = 10000  failed to add
+
+[GKLEE]: The configuration, Grid: <313, 1, 1>, Block: <32, 1, 1>
+
+[GKLEE]: Start executing a GPU kernel 
+
+[GKLEE]: 'True' path flow feasible !
+[GKLEE]: 'Else' path flow infeasible !
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <312, 0>, <16, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 22
+<BI: 1, Time: 0.180723>
+<BI: 2, Time: 0.183882>
+<BI: 3, Time: 0.18919>
+<BI: 4, Time: 0.192831>
+<BI: 5, Time: 0.224007>
+<BI: 6, Time: 0.258872>
+<BI: 7, Time: 0.571862>
+Under symbolic configuration, Across 7 BIs, Total Time: 1.80137
+After exploring 22 paths, the average exploration time (symbolic) is 0.633592s, the total execution time: 13.939s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <312, 0>, <16, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 23
+<BI: 1, Time: 0.180723>
+<BI: 2, Time: 0.183882>
+<BI: 3, Time: 0.18919>
+<BI: 4, Time: 0.192831>
+<BI: 5, Time: 0.224007>
+<BI: 6, Time: 0.258872>
+<BI: 7, Time: 0.571862>
+Under symbolic configuration, Across 7 BIs, Total Time: 1.80137
+After exploring 23 paths, the average exploration time (symbolic) is 0.684365s, the total execution time: 15.7404s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <312, 0>, <16, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 24
+<BI: 1, Time: 0.180723>
+<BI: 2, Time: 0.183882>
+<BI: 3, Time: 0.18919>
+<BI: 4, Time: 0.192831>
+<BI: 5, Time: 0.224007>
+<BI: 6, Time: 0.258872>
+<BI: 7, Time: 0.571862>
+Under symbolic configuration, Across 7 BIs, Total Time: 1.80137
+After exploring 24 paths, the average exploration time (symbolic) is 0.730907s, the total execution time: 17.5418s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+Thread 0 reaches a barrier: moving to the next thread.
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking bank conflicts at SharedMemory  **********
+[GKLEE]: The read set is empty in bank conflict checking for capability 2.x
+[GKLEE]: The write set is empty in bank conflict checking for capability 2.x
+[GKLEE]: ********** No Bank Conflict found at this SharedMemory **********
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking coalesced device memory access at capability: 2.x **********
+[GKLEE]: The read set for memory coalescing cap 2 is empty
+[GKLEE]: The write set for memory coalescing cap 2 is empty
+[GKLEE]: ********** All memory accesses are coalesced at capability: 2.x **********
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking warp divergence  **********
+[GKLEE]: ********** Warp Divergence not found for this kernel **********
+
+[GKLEE]: ********** (Symbolic Config) Start checking missed volatile at SharedMemory  ********** 
+[GKLEE]: ********** No 'Volatile' Qualifier Missed at this SharedMemory **********
+
+[GKLEE]: ********** (Symbolic Config) Start checking races at SharedMemory  **********
+[GKLEE]: ++++++++++ Read-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ++++++++++ Write-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ********** no races found at SharedMemory ***********
+
+[GKLEE]: ********** (Symbolic Config) Start checking races at DeviceMemory (Within Same Block)  **********
+[GKLEE]: ++++++++++ Read-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ++++++++++ Write-Write race checking (Pure Canonical Schedule) ++++++++++
+
+[GKLEE]: ********** (Symbolic Config) Start checking races at DeviceMemory (Across Blocks)  **********
+[GKLEE]: ********* no races found at DeviceMemory **********
+[GKLEE]: Within the current Barrier Interval, 1 flows are used to represent all threads !
+
+[GKLEE]: Finish executing a GPU kernel 
+
+[GKLEE]: GPU Execution time: 78.7624s
+[GKLEE]: In Barrier Interval 1, Elapsed time for symbolic configuration (Parametric Flow): 0.720002
+x = 15.000000, a = -0.000000, y = 3.000000, i = 0, size = 10000  failed to mul
+
+[GKLEE]: The configuration, Grid: <3125, 1, 1>, Block: <32, 1, 1>
+
+[GKLEE]: Start executing a GPU kernel 
+
+[GKLEE]: 'True' path flow feasible !
+[GKLEE]: 'Else' path flow infeasible !
+Thread 0 reaches a barrier: moving to the next thread.
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking bank conflicts at SharedMemory  **********
+[GKLEE]: The read set is empty in bank conflict checking for capability 2.x
+[GKLEE]: The write set is empty in bank conflict checking for capability 2.x
+[GKLEE]: ********** No Bank Conflict found at this SharedMemory **********
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking coalesced device memory access at capability: 2.x **********
+[GKLEE]: ********** All memory accesses are coalesced at capability: 2.x **********
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking warp divergence  **********
+[GKLEE]: ********** Warp Divergence not found for this kernel **********
+
+[GKLEE]: ********** (Symbolic Config) Start checking missed volatile at SharedMemory  ********** 
+[GKLEE]: ********** No 'Volatile' Qualifier Missed at this SharedMemory **********
+
+[GKLEE]: ********** (Symbolic Config) Start checking races at SharedMemory  **********
+[GKLEE]: ++++++++++ Read-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ++++++++++ Write-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ********** no races found at SharedMemory ***********
+
+[GKLEE]: ********** (Symbolic Config) Start checking races at DeviceMemory (Within Same Block)  **********
+[GKLEE]: ++++++++++ Read-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ++++++++++ Write-Write race checking (Pure Canonical Schedule) ++++++++++
+
+[GKLEE]: ********** (Symbolic Config) Start checking races at DeviceMemory (Across Blocks)  **********
+[GKLEE]: ********* no races found at DeviceMemory **********
+[GKLEE]: Within the current Barrier Interval, 1 flows are used to represent all threads !
+
+[GKLEE]: Finish executing a GPU kernel 
+
+[GKLEE]: GPU Execution time: 397.67s
+[GKLEE]: In Barrier Interval 1, Elapsed time for symbolic configuration (Parametric Flow): 0.45151
+x = -0.000000, a = 2.000000, y = 3.000000, i = 0, size = 100000  failed to add
+
+[GKLEE]: The configuration, Grid: <3125, 1, 1>, Block: <32, 1, 1>
+
+[GKLEE]: Start executing a GPU kernel 
+
+[GKLEE]: 'True' path flow feasible !
+[GKLEE]: 'Else' path flow infeasible !
+Tue May 10 04:45:18 MDT 2016
+Time lapse in milli seconds
+838021

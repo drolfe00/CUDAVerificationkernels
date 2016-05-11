@@ -1,0 +1,203 @@
+Tue May 10 05:47:28 MDT 2016
+Configuration: concurrency bug checking level is: 2
+
+[GKLEE]: The configuration, Grid: <1, 1, 1>, Block: <32, 1, 1>
+
+[GKLEE]: Start executing a GPU kernel 
+
+Thread 0 reaches a barrier: moving to the next thread.
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking bank conflicts at SharedMemory  **********
+[GKLEE]: The read set is empty in bank conflict checking for capability 2.x
+No Prefer Cex
+[GKLEE]: ++++++++++
+[GKLEE]: Access1 in Bank Conflict: 
+[GKLEE] Inst: 
+Instruction Line: 14, In File: bank_conflict.cpp, With Dir Path: /home/dan/classes/rigorousSystemDesign/project/sourceFiles/gklee/bank_conflict
+[File: /home/dan/classes/rigorousSystemDesign/project/sourceFiles/gklee/bank_conflict/bank_conflict.cpp, Line: 14, Inst:   smem[tid*2]=in[tid];]
+<W: _ZZ2bcPcS_E4smem_block_0, 128:16> 
+[GKLEE]: Access2 in Bank Conflict: 
+[GKLEE] Inst: 
+Instruction Line: 14, In File: bank_conflict.cpp, With Dir Path: /home/dan/classes/rigorousSystemDesign/project/sourceFiles/gklee/bank_conflict
+[File: /home/dan/classes/rigorousSystemDesign/project/sourceFiles/gklee/bank_conflict/bank_conflict.cpp, Line: 14, Inst:   smem[tid*2]=in[tid];]
+<W: _ZZ2bcPcS_E4smem_block_0, 0:0> 
+[GKLEE]: Thread 1 : { <0, 0, 0>, <16, 0, 0> } and Thread 2 : { <0, 0, 0>, <0, 0, 0> } incur the bank conflict!
+[GKLEE]: Thread 1's concretized offset: 
+[GKLEE]: Thread 2's concretized offset: 
+[GKLEE]: ++++++++++
+[GKLEE]: ********** Bank Conflict found at this SharedMemory **********
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking coalesced device memory access at capability: 2.x **********
+[GKLEE]: The write set for memory coalescing cap 2 is empty
+[GKLEE]: ********** All memory accesses are coalesced at capability: 2.x **********
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking warp divergence  **********
+[GKLEE]: ********** Warp Divergence not found for this kernel **********
+
+[GKLEE]: ********** (Symbolic Config) Start checking missed volatile at SharedMemory  ********** 
+[GKLEE]: ********** No 'Volatile' Qualifier Missed at this SharedMemory **********
+
+[GKLEE]: ********** (Symbolic Config) Start checking races at SharedMemory  **********
+[GKLEE]: ++++++++++ Read-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ++++++++++ Write-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ********** no races found at SharedMemory ***********
+
+[GKLEE]: ********** (Symbolic Config) Start checking races at DeviceMemory (Within Same Block)  **********
+[GKLEE]: ++++++++++ Read-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ++++++++++ Write-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ********* no races found at DeviceMemory **********
+[GKLEE]: Within the current Barrier Interval, 1 flows are used to represent all threads !
+[GKLEE]: In Barrier Interval 1, Elapsed time for symbolic configuration (Parametric Flow): 0.038651
+Thread 0 reaches a barrier: moving to the next thread.
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking bank conflicts at SharedMemory  **********
+[GKLEE]: The read set is empty in bank conflict checking for capability 2.x
+No Prefer Cex
+[GKLEE]: ++++++++++
+[GKLEE]: Access1 in Bank Conflict: 
+[GKLEE] Inst: 
+Instruction Line: 16, In File: bank_conflict.cpp, With Dir Path: /home/dan/classes/rigorousSystemDesign/project/sourceFiles/gklee/bank_conflict
+[File: /home/dan/classes/rigorousSystemDesign/project/sourceFiles/gklee/bank_conflict/bank_conflict.cpp, Line: 16, Inst:   smem[tid*4]=in[tid];]
+<W: _ZZ2bcPcS_E4smem_block_0, 128:8> 
+[GKLEE]: Access2 in Bank Conflict: 
+[GKLEE] Inst: 
+Instruction Line: 16, In File: bank_conflict.cpp, With Dir Path: /home/dan/classes/rigorousSystemDesign/project/sourceFiles/gklee/bank_conflict
+[File: /home/dan/classes/rigorousSystemDesign/project/sourceFiles/gklee/bank_conflict/bank_conflict.cpp, Line: 16, Inst:   smem[tid*4]=in[tid];]
+<W: _ZZ2bcPcS_E4smem_block_0, 0:0> 
+[GKLEE]: Thread 1 : { <0, 0, 0>, <8, 0, 0> } and Thread 2 : { <0, 0, 0>, <0, 0, 0> } incur the bank conflict!
+[GKLEE]: Thread 1's concretized offset: 
+[GKLEE]: Thread 2's concretized offset: 
+[GKLEE]: ++++++++++
+[GKLEE]: ********** Bank Conflict found at this SharedMemory **********
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking coalesced device memory access at capability: 2.x **********
+[GKLEE]: The write set for memory coalescing cap 2 is empty
+[GKLEE]: ********** All memory accesses are coalesced at capability: 2.x **********
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking warp divergence  **********
+[GKLEE]: ********** Warp Divergence not found for this kernel **********
+
+[GKLEE]: ********** (Symbolic Config) Start checking missed volatile at SharedMemory  ********** 
+[GKLEE]: ********** No 'Volatile' Qualifier Missed at this SharedMemory **********
+
+[GKLEE]: ********** (Symbolic Config) Start checking races at SharedMemory  **********
+[GKLEE]: ++++++++++ Read-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ++++++++++ Write-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ********** no races found at SharedMemory ***********
+
+[GKLEE]: ********** (Symbolic Config) Start checking races at DeviceMemory (Within Same Block)  **********
+[GKLEE]: ++++++++++ Read-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ++++++++++ Write-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ********* no races found at DeviceMemory **********
+[GKLEE]: Within the current Barrier Interval, 1 flows are used to represent all threads !
+[GKLEE]: In Barrier Interval 2, Elapsed time for symbolic configuration (Parametric Flow): 0.02232
+Thread 0 reaches a barrier: moving to the next thread.
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking bank conflicts at SharedMemory  **********
+[GKLEE]: The read set is empty in bank conflict checking for capability 2.x
+No Prefer Cex
+[GKLEE]: ++++++++++
+[GKLEE]: Access1 in Bank Conflict: 
+[GKLEE] Inst: 
+Instruction Line: 18, In File: bank_conflict.cpp, With Dir Path: /home/dan/classes/rigorousSystemDesign/project/sourceFiles/gklee/bank_conflict
+[File: /home/dan/classes/rigorousSystemDesign/project/sourceFiles/gklee/bank_conflict/bank_conflict.cpp, Line: 18, Inst:   smem[tid*8]=in[tid];]
+<W: _ZZ2bcPcS_E4smem_block_0, 128:4> 
+[GKLEE]: Access2 in Bank Conflict: 
+[GKLEE] Inst: 
+Instruction Line: 18, In File: bank_conflict.cpp, With Dir Path: /home/dan/classes/rigorousSystemDesign/project/sourceFiles/gklee/bank_conflict
+[File: /home/dan/classes/rigorousSystemDesign/project/sourceFiles/gklee/bank_conflict/bank_conflict.cpp, Line: 18, Inst:   smem[tid*8]=in[tid];]
+<W: _ZZ2bcPcS_E4smem_block_0, 0:0> 
+[GKLEE]: Thread 1 : { <0, 0, 0>, <4, 0, 0> } and Thread 2 : { <0, 0, 0>, <0, 0, 0> } incur the bank conflict!
+[GKLEE]: Thread 1's concretized offset: 
+[GKLEE]: Thread 2's concretized offset: 
+[GKLEE]: ++++++++++
+[GKLEE]: ********** Bank Conflict found at this SharedMemory **********
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking coalesced device memory access at capability: 2.x **********
+[GKLEE]: The write set for memory coalescing cap 2 is empty
+[GKLEE]: ********** All memory accesses are coalesced at capability: 2.x **********
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking warp divergence  **********
+[GKLEE]: ********** Warp Divergence not found for this kernel **********
+
+[GKLEE]: ********** (Symbolic Config) Start checking missed volatile at SharedMemory  ********** 
+[GKLEE]: ********** No 'Volatile' Qualifier Missed at this SharedMemory **********
+
+[GKLEE]: ********** (Symbolic Config) Start checking races at SharedMemory  **********
+[GKLEE]: ++++++++++ Read-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ++++++++++ Write-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ********** no races found at SharedMemory ***********
+
+[GKLEE]: ********** (Symbolic Config) Start checking races at DeviceMemory (Within Same Block)  **********
+[GKLEE]: ++++++++++ Read-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ++++++++++ Write-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ********* no races found at DeviceMemory **********
+[GKLEE]: Within the current Barrier Interval, 1 flows are used to represent all threads !
+[GKLEE]: In Barrier Interval 3, Elapsed time for symbolic configuration (Parametric Flow): 0.023047
+Thread 0 reaches a barrier: moving to the next thread.
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking bank conflicts at SharedMemory  **********
+No Prefer Cex
+[GKLEE]: ++++++++++
+[GKLEE]: Access1 in Bank Conflict: 
+[GKLEE] Inst: 
+Instruction Line: 21, In File: bank_conflict.cpp, With Dir Path: /home/dan/classes/rigorousSystemDesign/project/sourceFiles/gklee/bank_conflict
+[File: /home/dan/classes/rigorousSystemDesign/project/sourceFiles/gklee/bank_conflict/bank_conflict.cpp, Line: 21, Inst:   int x = smem[tid * 2];  ]
+<R: _ZZ2bcPcS_E4smem_block_0, 128:16> 
+[GKLEE]: Access2 in Bank Conflict: 
+[GKLEE] Inst: 
+Instruction Line: 21, In File: bank_conflict.cpp, With Dir Path: /home/dan/classes/rigorousSystemDesign/project/sourceFiles/gklee/bank_conflict
+[File: /home/dan/classes/rigorousSystemDesign/project/sourceFiles/gklee/bank_conflict/bank_conflict.cpp, Line: 21, Inst:   int x = smem[tid * 2];  ]
+<R: _ZZ2bcPcS_E4smem_block_0, 0:0> 
+[GKLEE]: Thread 1 : { <0, 0, 0>, <16, 0, 0> } and Thread 2 : { <0, 0, 0>, <0, 0, 0> } incur the bank conflict!
+[GKLEE]: Thread 1's concretized offset: 
+[GKLEE]: Thread 2's concretized offset: 
+[GKLEE]: ++++++++++
+[GKLEE]: The write set is empty in bank conflict checking for capability 2.x
+[GKLEE]: ********** Bank Conflict found at this SharedMemory **********
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking coalesced device memory access at capability: 2.x **********
+[GKLEE]: The read set for memory coalescing cap 2 is empty
+[GKLEE]: ********** All memory accesses are coalesced at capability: 2.x **********
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking warp divergence  **********
+[GKLEE]: ********** Warp Divergence not found for this kernel **********
+
+[GKLEE]: ********** (Symbolic Config) Start checking missed volatile at SharedMemory  ********** 
+[GKLEE]: ********** No 'Volatile' Qualifier Missed at this SharedMemory **********
+
+[GKLEE]: ********** (Symbolic Config) Start checking races at SharedMemory  **********
+[GKLEE]: ++++++++++ Read-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ++++++++++ Write-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ********** no races found at SharedMemory ***********
+
+[GKLEE]: ********** (Symbolic Config) Start checking races at DeviceMemory (Within Same Block)  **********
+[GKLEE]: ++++++++++ Read-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ++++++++++ Write-Write race checking (Pure Canonical Schedule) ++++++++++
+
+[GKLEE]: ********** (Symbolic Config) Checking races at DeviceMemory (Across Blocks) not allowed (number of block > 1)  **********
+[GKLEE]: ********* no races found at DeviceMemory **********
+[GKLEE]: Within the current Barrier Interval, 1 flows are used to represent all threads !
+
+[GKLEE]: Finish executing a GPU kernel 
+
+[GKLEE]: GPU Execution time: 0.150285s
+[GKLEE]: In Barrier Interval 4, Elapsed time for symbolic configuration (Parametric Flow): 0.043343
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+
+[GKLEE]: Finishing the program!
+ path num explored here (symbolic config): 1
+<BI: 1, Time: 0.038651>
+<BI: 2, Time: 0.02232>
+<BI: 3, Time: 0.023047>
+<BI: 4, Time: 0.043343>
+Under symbolic configuration, Across 4 BIs, Total Time: 0.127361
+After exploring 1 paths, the average exploration time (symbolic) is 0.127361s, the total execution time: 0.127361s
+********** Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+Tue May 10 05:47:29 MDT 2016
+Time lapse in milli seconds
+893

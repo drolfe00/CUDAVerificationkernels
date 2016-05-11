@@ -1,0 +1,22 @@
+Tue May 10 04:29:10 MDT 2016
+Configuration: concurrency bug checking level is: 2
+CUDA Clock sample
+
+[GKLEE]: The configuration, Grid: <64, 1, 1>, Block: <256, 1, 1>
+
+[GKLEE]: Start executing a GPU kernel 
+
+[GKLEE]: 'True' path flow feasible !
+[GKLEE]: 'Else' path flow feasible !
+[GKLEE]: create new parametric flow: 2
+path num explored here (symbolic config): 1
+Under symbolic configuration, Across 0 BIs, Total Time: 0
+After exploring 1 paths, the average exploration time (symbolic) is 0s, the total execution time: 0s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+Tue May 10 04:29:11 MDT 2016
+Time lapse in milli seconds
+981

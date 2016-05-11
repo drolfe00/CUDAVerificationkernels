@@ -1,0 +1,80 @@
+Tue May 10 04:36:21 MDT 2016
+Configuration: concurrency bug checking level is: 2
+Computing result using CUDA Kernel...
+
+[GKLEE]: The configuration, Grid: <2, 1, 1>, Block: <32, 32, 1>
+
+[GKLEE]: Start executing a GPU kernel 
+
+[GKLEE]: 'True' path flow feasible !
+[GKLEE]: 'Else' path flow infeasible !
+Thread 0 reaches a barrier: moving to the next thread.
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking bank conflicts at SharedMemory  **********
+[GKLEE]: ********** No Bank Conflict found at this SharedMemory **********
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking coalesced device memory access at capability: 2.x **********
+[GKLEE]: The write set for memory coalescing cap 2 is empty
+[GKLEE]: ********** All memory accesses are coalesced at capability: 2.x **********
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking warp divergence  **********
+[GKLEE]: ********** Warp Divergence not found for this kernel **********
+
+[GKLEE]: ********** (Symbolic Config) Start checking missed volatile at SharedMemory  ********** 
+No Prefer Cex
+[GKLEE]: ++++++++++
+[GKLEE]: Access1: 
+[GKLEE] Inst: 
+Instruction Line: 77, In File: matrixMul.cpp, With Dir Path: /home/dan/classes/rigorousSystemDesign/project/sourceFiles/gklee/matrixMulGeofBug
+[File: /home/dan/classes/rigorousSystemDesign/project/sourceFiles/gklee/matrixMulGeofBug/matrixMul.cpp, Line: 77, Inst:             Csub += As[ty][k] * Bs[k][tx];]
+<R: _ZZ13matrixMulCUDAILi32EEvPiS0_S0_iiE2As_block_0, 0:0> 
+[GKLEE]: Access2: 
+[GKLEE] Inst: 
+Instruction Line: 64, In File: matrixMul.cpp, With Dir Path: /home/dan/classes/rigorousSystemDesign/project/sourceFiles/gklee/matrixMulGeofBug
+[File: /home/dan/classes/rigorousSystemDesign/project/sourceFiles/gklee/matrixMulGeofBug/matrixMul.cpp, Line: 64, Inst:         As[ty][tx] = A[a + wA * ty + tx];]
+<W: _ZZ13matrixMulCUDAILi32EEvPiS0_S0_iiE2As_block_0, 0:1065353216> 
+[GKLEE]: Thread 1 : { <0, 0, 0>, <1, 0, 0> } and Thread 2 : { <0, 0, 0>, <0, 0, 0> } has the read-write memory sharing, so 'volatile' qualifier required!
+[GKLEE]: Thread 1's concretized offset: 
+[GKLEE]: Thread 2's concretized offset: 
+[GKLEE]: ++++++++++
+[GKLEE]: ********** 'Volatile' Qualifier Missed at this SharedMemory **********
+
+[GKLEE]: ********** (Symbolic Config) Start checking races at SharedMemory  **********
+[GKLEE]: ++++++++++ Read-Write race checking (Pure Canonical Schedule) ++++++++++
+No Prefer Cex
+[GKLEE]: ++++++++++
+[GKLEE]: Access1: 
+[GKLEE] Inst: 
+Instruction Line: 77, In File: matrixMul.cpp, With Dir Path: /home/dan/classes/rigorousSystemDesign/project/sourceFiles/gklee/matrixMulGeofBug
+[File: /home/dan/classes/rigorousSystemDesign/project/sourceFiles/gklee/matrixMulGeofBug/matrixMul.cpp, Line: 77, Inst:             Csub += As[ty][k] * Bs[k][tx];]
+<R: _ZZ13matrixMulCUDAILi32EEvPiS0_S0_iiE2As_block_0, 0:0> 
+[GKLEE]: Access2: 
+[GKLEE] Inst: 
+Instruction Line: 64, In File: matrixMul.cpp, With Dir Path: /home/dan/classes/rigorousSystemDesign/project/sourceFiles/gklee/matrixMulGeofBug
+[File: /home/dan/classes/rigorousSystemDesign/project/sourceFiles/gklee/matrixMulGeofBug/matrixMul.cpp, Line: 64, Inst:         As[ty][tx] = A[a + wA * ty + tx];]
+<W: _ZZ13matrixMulCUDAILi32EEvPiS0_S0_iiE2As_block_0, 0:1065353216> 
+[GKLEE]: Thread 1 : { <0, 0, 0>, <1, 0, 0> } and Thread 2 : { <0, 0, 0>, <0, 0, 0> } incur the (Actual) read-write race
+[GKLEE]: Thread 1's concretized offset: 
+[GKLEE]: Thread 2's concretized offset: 
+[GKLEE]: Thread 1 resides in BI: 1, Thread 2 resides in BI: 1
+[GKLEE]: ++++++++++
+[GKLEE]: ++++++++++ Write-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ********** races found at SharedMemory ***********
+path num explored here (symbolic config): 1
+Under symbolic configuration, Across 0 BIs, Total Time: 0
+After exploring 1 paths, the average exploration time (symbolic) is 0s, the total execution time: 0s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** Volatile Missed found **********
+********** Race found **********
+
+[GKLEE]: ********** (Symbolic Config) Start checking races at DeviceMemory (Within Same Block)  **********
+[GKLEE]: ++++++++++ Read-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ++++++++++ Write-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ********* no races found at DeviceMemory **********
+[GKLEE]: Within the current Barrier Interval, 1 flows are used to represent all threads !
+[GKLEE]: In Barrier Interval 1, Elapsed time for symbolic configuration (Parametric Flow): 1.34477
+Tue May 10 04:36:29 MDT 2016
+Time lapse in milli seconds
+7959

@@ -1,0 +1,26 @@
+****************************************
+The 0 (pointer) argument of function _Z8d_sobel1PiPjiii: 
+result
+The 1 (pointer) argument of function _Z8d_sobel1PiPjiii: 
+pic
+
+Start evaluating 2 (pointer) arguments of function _Z8d_sobel1PiPjiii
+The Br instruction is tainted w.r.t. the argument: pic
+
+
+In the kernel _Z8d_sobel1PiPjiii, have to set 1 arguments over 5 arguments as [Tainted]
+The 1 argument: pic
+=====================================
+****************************************
+The 0 (pointer) argument of function _Z8d_sobel2PiPjiii: 
+result
+The 1 (pointer) argument of function _Z8d_sobel2PiPjiii: 
+pic
+
+Start evaluating 2 (pointer) arguments of function _Z8d_sobel2PiPjiii
+The Br instruction is tainted w.r.t. the argument: pic
+
+
+In the kernel _Z8d_sobel2PiPjiii, have to set 1 arguments over 5 arguments as [Tainted]
+The 1 argument: pic
+=====================================

@@ -1,0 +1,16 @@
+KLEE: output directory = "klee-out-5"
+KLEE: WARNING: undefined reference to function: __clear_device
+KLEE: WARNING: undefined reference to function: __clear_host
+KLEE: WARNING: undefined reference to function: __set_CUDAConfig
+KLEE: WARNING: undefined reference to function: __set_device
+KLEE: WARNING: undefined reference to function: __set_host
+KLEE: WARNING: undefined reference to variable: blockDim
+KLEE: WARNING: undefined reference to variable: blockIdx
+KLEE: WARNING: undefined reference to function: printf
+KLEE: WARNING: undefined reference to variable: threadIdx
+KLEE: ERROR: /home/dan/classes/rigorousSystemDesign/project/sourceFiles/gklee/deadlock_0/deadlock_0.cpp:39: execution halts on a barrier mismatch in parametric flow
+KLEE: NOTE: now ignoring this error at this location
+
+KLEE: done: total instructions = 3072
+KLEE: done: completed paths = 1
+KLEE: done: generated tests = 1

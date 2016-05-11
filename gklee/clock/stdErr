@@ -1,0 +1,16 @@
+KLEE: output directory = "klee-out-3"
+KLEE: WARNING: undefined reference to function: __set_CUDAConfig
+KLEE: WARNING: undefined reference to variable: blockDim
+KLEE: WARNING: undefined reference to variable: blockIdx
+KLEE: WARNING: undefined reference to function: clock
+KLEE: WARNING: undefined reference to variable: gridDim
+KLEE: WARNING: undefined reference to function: printf
+KLEE: WARNING: undefined reference to variable: threadIdx
+KLEE: WARNING: calling external: printf()
+KLEE: WARNING: calling external: clock()
+KLEE: ERROR: /home/dan/classes/rigorousSystemDesign/project/sourceFiles/gklee/clock/clock.cpp:33: memory error: out of bound pointer
+KLEE: NOTE: now ignoring this error at this location
+
+KLEE: done: total instructions = 7044
+KLEE: done: completed paths = 1
+KLEE: done: generated tests = 1

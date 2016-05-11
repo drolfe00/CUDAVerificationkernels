@@ -1,0 +1,22 @@
+****************************************
+The 0 (pointer) argument of function _Z2dlPi: 
+in
+
+Start evaluating 1 (pointer) arguments of function _Z2dlPi
+The Br instruction is tainted w.r.t. the argument: in
+
+
+In the kernel _Z2dlPi, have to set 1 arguments over 1 arguments as [Tainted]
+The 0 argument: in
+=====================================
+****************************************
+The 0 (pointer) argument of function _Z2dlPi: 
+in
+
+Start evaluating 1 (pointer) arguments of function _Z2dlPi
+The Br instruction is tainted w.r.t. the argument: in
+
+
+In the kernel _Z2dlPi, have to set 1 arguments over 1 arguments as [Tainted]
+The 0 argument: in
+=====================================

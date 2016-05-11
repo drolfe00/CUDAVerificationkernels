@@ -1,0 +1,44 @@
+Tue May 10 04:33:54 MDT 2016
+Configuration: concurrency bug checking level is: 2
+
+[GKLEE]: The configuration, Grid: <235, 1, 1>, Block: <128, 1, 1>
+
+[GKLEE]: Start executing a GPU kernel 
+
+[GKLEE]: 'True' path flow feasible !
+[GKLEE]: 'Else' path flow feasible !
+[GKLEE]: create new parametric flow: 2
+Thread 0 reaches a barrier: moving to the next thread.
+Thread 2 reaches a barrier: moving to the next thread.
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking bank conflicts at SharedMemory  **********
+[GKLEE]: The read set is empty in bank conflict checking for capability 2.x
+[GKLEE]: The write set is empty in bank conflict checking for capability 2.x
+[GKLEE]: ********** No Bank Conflict found at this SharedMemory **********
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking coalesced device memory access at capability: 2.x **********
+[GKLEE]: The read set for memory coalescing cap 2 is empty
+[GKLEE]: ********** All memory accesses are coalesced at capability: 2.x **********
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking warp divergence  **********
+[GKLEE]: ********** Warp Divergence found for this kernel **********
+
+[GKLEE]: ********** (Symbolic Config) Start checking missed volatile at SharedMemory  ********** 
+[GKLEE]: ********** No 'Volatile' Qualifier Missed at this SharedMemory **********
+
+[GKLEE]: ********** (Symbolic Config) Start checking races at SharedMemory  **********
+[GKLEE]: ++++++++++ Read-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ++++++++++ Write-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ********** no races found at SharedMemory ***********
+
+[GKLEE]: ********** (Symbolic Config) Start checking races at DeviceMemory (Within Same Block)  **********
+[GKLEE]: ++++++++++ Read-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ++++++++++ Write-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ********* no races found at DeviceMemory **********
+[GKLEE]: Within the current Barrier Interval, 2 flows are used to represent all threads !
+[GKLEE]: In Barrier Interval 1, Elapsed time for symbolic configuration (Parametric Flow): 0.258914
+[GKLEE]: 'True' path flow feasible !
+[GKLEE]: 'Else' path flow infeasible !
+Tue May 10 04:35:31 MDT 2016
+Time lapse in milli seconds
+96749

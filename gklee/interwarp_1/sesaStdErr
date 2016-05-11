@@ -1,0 +1,30 @@
+KLEE: output directory = "klee-out-4"
+KLEE: WARNING: undefined reference to function: __clear_device
+KLEE: WARNING: undefined reference to function: __clear_host
+KLEE: WARNING: undefined reference to function: __set_CUDAConfig
+KLEE: WARNING: undefined reference to function: __set_device
+KLEE: WARNING: undefined reference to function: __set_host
+KLEE: WARNING: undefined reference to function: printf
+KLEE: WARNING: undefined reference to variable: threadIdx
+  %27 = load volatile i32* %26, align 4, !dbg !734
+  store volatile i32 0, i32* %22, align 4, !dbg !733
+0
+0
+  %27 = load volatile i32* %26, align 4, !dbg !734
+  store volatile i32 0, i32* %22, align 4, !dbg !733
+0
+0
+  store volatile i32 %8, i32* %11, align 4, !dbg !729
+  store volatile i32 0, i32* %22, align 4, !dbg !733
+0
+0
+  store volatile i32 1, i32* %18, align 4, !dbg !731
+  store volatile i32 0, i32* %22, align 4, !dbg !733
+0
+0
+KLEE: ERROR: /home/dan/classes/rigorousSystemDesign/project/sourceFiles/gklee/interwarp_1/interwarp_1.cpp:29: execution halts on encounering a (shared) race
+KLEE: NOTE: now ignoring this error at this location
+
+KLEE: done: total instructions = 2071
+KLEE: done: completed paths = 1
+KLEE: done: generated tests = 1

@@ -1,0 +1,13 @@
+Tue May 10 06:10:04 MDT 2016
+Configuration: concurrency bug checking level is: 2
+path num explored here (symbolic config): 1
+Under symbolic configuration, Across 0 BIs, Total Time: 0
+After exploring 1 paths, the average exploration time (symbolic) is 0s, the total execution time: 0s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+Tue May 10 06:10:05 MDT 2016
+Time lapse in milli seconds
+907

@@ -1,0 +1,48 @@
+****************************************
+The 0 (pointer) argument of function _Z5d_addPfS_S_i: 
+x
+The 1 (pointer) argument of function _Z5d_addPfS_S_i: 
+y
+The 2 (pointer) argument of function _Z5d_addPfS_S_i: 
+z
+
+Start evaluating 3 (pointer) arguments of function _Z5d_addPfS_S_i
+
+In the kernel _Z5d_addPfS_S_i, no need to set its 4 arguments as [Tainted]
+=====================================
+****************************************
+The 0 (pointer) argument of function _Z5d_mulPfS_S_i: 
+x
+The 1 (pointer) argument of function _Z5d_mulPfS_S_i: 
+y
+The 2 (pointer) argument of function _Z5d_mulPfS_S_i: 
+z
+
+Start evaluating 3 (pointer) arguments of function _Z5d_mulPfS_S_i
+
+In the kernel _Z5d_mulPfS_S_i, no need to set its 4 arguments as [Tainted]
+=====================================
+****************************************
+The 0 (pointer) argument of function _Z5d_addPfS_S_i: 
+x
+The 1 (pointer) argument of function _Z5d_addPfS_S_i: 
+y
+The 2 (pointer) argument of function _Z5d_addPfS_S_i: 
+z
+
+Start evaluating 3 (pointer) arguments of function _Z5d_addPfS_S_i
+
+In the kernel _Z5d_addPfS_S_i, no need to set its 4 arguments as [Tainted]
+=====================================
+****************************************
+The 0 (pointer) argument of function _Z5d_mulPfS_S_i: 
+x
+The 1 (pointer) argument of function _Z5d_mulPfS_S_i: 
+y
+The 2 (pointer) argument of function _Z5d_mulPfS_S_i: 
+z
+
+Start evaluating 3 (pointer) arguments of function _Z5d_mulPfS_S_i
+
+In the kernel _Z5d_mulPfS_S_i, no need to set its 4 arguments as [Tainted]
+=====================================

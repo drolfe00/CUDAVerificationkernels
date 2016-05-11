@@ -1,0 +1,10 @@
+Tue May 10 03:49:49 MDT 2016
+GPUVerify kernel analyser finished with 1 verified, 0 errors
+Verified: kernel.cu
+- no data races within thread blocks
+- no data races between thread blocks
+- no barrier divergence
+- no assertion failures
+(but absolutely no warranty provided)
+Time lapse in milli seconds
+1482

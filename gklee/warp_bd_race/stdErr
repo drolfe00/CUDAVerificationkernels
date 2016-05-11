@@ -1,0 +1,21 @@
+KLEE: output directory = "klee-out-3"
+KLEE: WARNING: undefined reference to function: __clear_device
+KLEE: WARNING: undefined reference to function: __clear_host
+KLEE: WARNING: undefined reference to function: __set_CUDAConfig
+KLEE: WARNING: undefined reference to function: __set_device
+KLEE: WARNING: undefined reference to function: __set_host
+KLEE: WARNING: undefined reference to variable: threadIdx
+  store i32 0, i32* %9, align 4, !dbg !718
+  store i32 0, i32* %9, align 4, !dbg !718
+0
+0
+  store i32 0, i32* %9, align 4, !dbg !718
+  store i32 1, i32* %9, align 4, !dbg !719
+0
+0
+KLEE: ERROR: /home/dan/classes/rigorousSystemDesign/project/sourceFiles/gklee/warp_bd_race/warp_bd_race.cpp:18: execution halts on encounering a (global) race
+KLEE: NOTE: now ignoring this error at this location
+
+KLEE: done: total instructions = 361
+KLEE: done: completed paths = 1
+KLEE: done: generated tests = 1

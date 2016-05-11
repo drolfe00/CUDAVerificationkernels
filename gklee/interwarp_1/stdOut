@@ -1,0 +1,120 @@
+Tue May 10 04:35:10 MDT 2016
+Configuration: concurrency bug checking level is: 2
+
+[GKLEE]: The configuration, Grid: <1, 1, 1>, Block: <32, 1, 1>
+
+[GKLEE]: Start executing a GPU kernel 
+
+[GKLEE]: 'True' path flow feasible !
+[GKLEE]: 'Else' path flow feasible !
+[GKLEE]: create new parametric flow: 2
+Thread 0 reaches a barrier: moving to the next thread.
+Thread 2 reaches a barrier: moving to the next thread.
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking bank conflicts at SharedMemory  **********
+[GKLEE]: ********** No Bank Conflict found at this SharedMemory **********
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking coalesced device memory access at capability: 2.x **********
+[GKLEE]: ********** All memory accesses are coalesced at capability: 2.x **********
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking warp divergence  **********
+[GKLEE]: ********** Warp Divergence found for this kernel **********
+
+[GKLEE]: ********** (Symbolic Config) Start checking missed volatile at SharedMemory  ********** 
+No Prefer Cex
+[GKLEE]: ++++++++++
+[GKLEE]: Access1: 
+[GKLEE] Inst: 
+Instruction Line: 16, In File: interwarp_1.cpp, With Dir Path: /home/dan/classes/rigorousSystemDesign/project/sourceFiles/gklee/interwarp_1
+[File: /home/dan/classes/rigorousSystemDesign/project/sourceFiles/gklee/interwarp_1/interwarp_1.cpp, Line: 16, Inst:   vout[idx] = smem[idx];]
+<R: _ZZ5iwarpPiE4smem_block_0, 0:1> 
+[GKLEE]: Access2: 
+[GKLEE] Inst: 
+Instruction Line: 15, In File: interwarp_1.cpp, With Dir Path: /home/dan/classes/rigorousSystemDesign/project/sourceFiles/gklee/interwarp_1
+[File: /home/dan/classes/rigorousSystemDesign/project/sourceFiles/gklee/interwarp_1/interwarp_1.cpp, Line: 15, Inst:     smem[idx-1] = 0;]
+<W: _ZZ5iwarpPiE4smem_block_0, 0:0> 
+[GKLEE]: Thread 1 : { <0, 0, 0>, <0, 0, 0> } and Thread 2 : { <0, 0, 0>, <1, 0, 0> } has the read-write memory sharing, so 'volatile' qualifier required!
+[GKLEE]: Thread 1's concretized offset: 
+[GKLEE]: Thread 2's concretized offset: 
+[GKLEE]: ++++++++++
+[GKLEE]: ********** 'Volatile' Qualifier Missed at this SharedMemory **********
+
+[GKLEE]: ********** (Symbolic Config) Start checking races at SharedMemory  **********
+[GKLEE]: ++++++++++ Read-Write race checking (Pure Canonical Schedule) ++++++++++
+No Prefer Cex
+[GKLEE]: ++++++++++
+[GKLEE]: Access1: 
+[GKLEE] Inst: 
+Instruction Line: 16, In File: interwarp_1.cpp, With Dir Path: /home/dan/classes/rigorousSystemDesign/project/sourceFiles/gklee/interwarp_1
+[File: /home/dan/classes/rigorousSystemDesign/project/sourceFiles/gklee/interwarp_1/interwarp_1.cpp, Line: 16, Inst:   vout[idx] = smem[idx];]
+<R: _ZZ5iwarpPiE4smem_block_0, 0:1> 
+[GKLEE]: Access2: 
+[GKLEE] Inst: 
+Instruction Line: 15, In File: interwarp_1.cpp, With Dir Path: /home/dan/classes/rigorousSystemDesign/project/sourceFiles/gklee/interwarp_1
+[File: /home/dan/classes/rigorousSystemDesign/project/sourceFiles/gklee/interwarp_1/interwarp_1.cpp, Line: 15, Inst:     smem[idx-1] = 0;]
+<W: _ZZ5iwarpPiE4smem_block_0, 0:0> 
+[GKLEE]: Thread 1 : { <0, 0, 0>, <0, 0, 0> } and Thread 2 : { <0, 0, 0>, <1, 0, 0> } incur the (Actual) read-write race
+[GKLEE]: Thread 1's concretized offset: 
+[GKLEE]: Thread 2's concretized offset: 
+[GKLEE]: Thread 1 resides in BI: 1, Thread 2 resides in BI: 1
+[GKLEE]: ++++++++++
+[GKLEE]: ++++++++++ Write-Write race checking (Pure Canonical Schedule) ++++++++++
+No Prefer Cex
+[GKLEE]: ++++++++++
+[GKLEE]: Access1: 
+[GKLEE] Inst: 
+Instruction Line: 10, In File: interwarp_1.cpp, With Dir Path: /home/dan/classes/rigorousSystemDesign/project/sourceFiles/gklee/interwarp_1
+[File: /home/dan/classes/rigorousSystemDesign/project/sourceFiles/gklee/interwarp_1/interwarp_1.cpp, Line: 10, Inst:   smem[idx] = vout[idx];]
+<W: _ZZ5iwarpPiE4smem_block_0, 0:0> 
+[GKLEE]: Access2: 
+[GKLEE] Inst: 
+Instruction Line: 15, In File: interwarp_1.cpp, With Dir Path: /home/dan/classes/rigorousSystemDesign/project/sourceFiles/gklee/interwarp_1
+[File: /home/dan/classes/rigorousSystemDesign/project/sourceFiles/gklee/interwarp_1/interwarp_1.cpp, Line: 15, Inst:     smem[idx-1] = 0;]
+<W: _ZZ5iwarpPiE4smem_block_0, 0:0> 
+[GKLEE]: Thread 1 : { <0, 0, 0>, <0, 0, 0> } and Thread 2 : { <0, 0, 0>, <1, 0, 0> } incur the (Benign) write-write race
+[GKLEE]: Thread 1's concretized offset: 
+[GKLEE]: Thread 2's concretized offset: 
+[GKLEE]: Thread 1 resides in BI: 1, Thread 2 resides in BI: 1
+[GKLEE]: ++++++++++
+No Prefer Cex
+[GKLEE]: ++++++++++
+[GKLEE]: Access1: 
+[GKLEE] Inst: 
+Instruction Line: 13, In File: interwarp_1.cpp, With Dir Path: /home/dan/classes/rigorousSystemDesign/project/sourceFiles/gklee/interwarp_1
+[File: /home/dan/classes/rigorousSystemDesign/project/sourceFiles/gklee/interwarp_1/interwarp_1.cpp, Line: 13, Inst:     smem[idx] = 1;]
+<W: _ZZ5iwarpPiE4smem_block_0, 0:1> 
+[GKLEE]: Access2: 
+[GKLEE] Inst: 
+Instruction Line: 15, In File: interwarp_1.cpp, With Dir Path: /home/dan/classes/rigorousSystemDesign/project/sourceFiles/gklee/interwarp_1
+[File: /home/dan/classes/rigorousSystemDesign/project/sourceFiles/gklee/interwarp_1/interwarp_1.cpp, Line: 15, Inst:     smem[idx-1] = 0;]
+<W: _ZZ5iwarpPiE4smem_block_0, 0:0> 
+[GKLEE]: Thread 1 : { <0, 0, 0>, <0, 0, 0> } and Thread 2 : { <0, 0, 0>, <1, 0, 0> } incur the (Actual) write-write race
+[GKLEE]: Thread 1's concretized offset: 
+[GKLEE]: Thread 2's concretized offset: 
+[GKLEE]: Thread 1 resides in BI: 1, Thread 2 resides in BI: 1
+[GKLEE]: ++++++++++
+[GKLEE]: ********** races found at SharedMemory ***********
+path num explored here (symbolic config): 1
+Under symbolic configuration, Across 0 BIs, Total Time: 0
+After exploring 1 paths, the average exploration time (symbolic) is 0s, the total execution time: 0s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** Warp Divergence found **********
+********** Volatile Missed found **********
+********** Race found **********
+
+[GKLEE]: ********** (Symbolic Config) Start checking races at DeviceMemory (Within Same Block)  **********
+[GKLEE]: ++++++++++ Read-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ++++++++++ Write-Write race checking (Pure Canonical Schedule) ++++++++++
+
+[GKLEE]: ********** (Symbolic Config) Checking races at DeviceMemory (Across Blocks) not allowed (number of block > 1)  **********
+[GKLEE]: ********* no races found at DeviceMemory **********
+[GKLEE]: Within the current Barrier Interval, 2 flows are used to represent all threads !
+
+[GKLEE]: Finish executing a GPU kernel 
+
+[GKLEE]: GPU Execution time: 0.226461s
+[GKLEE]: In Barrier Interval 1, Elapsed time for symbolic configuration (Parametric Flow): 0.182607
+Tue May 10 04:35:11 MDT 2016
+Time lapse in milli seconds
+901

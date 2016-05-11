@@ -1,0 +1,26 @@
+digraph kernel{
+kernel;
+"kernel" -> "Flow_0_0";
+Flow_0_0 [label="flow 0:true" color=green shape = rectangle];
+Branch_1 [label = <<table><tr><td>"  br i1 %10, label %11, label %31, !dbg !985, !br-S-S !986"</td></tr><tr><td>"(Slt (Add w32 (Mul w32 128(ReadLSB w32 0 bid_arr_k0_0))(ReadLSB w32 0 tid_arr_k0_0))100)"</td></tr></table>> color = orange shape = invhouse];
+"Flow_0_0" -> "Branch_1";
+Flow_2_2 [label="flow 2:true" color=green shape = rectangle];
+Flow_0_0 -> Flow_2_2 [label = "spawn" color = purple];
+"Flow_2_2" -> "Branch_1";
+"Branch_1" -> "Flow_0_3";
+Flow_0_3 [label="flow 0:(Slt (Add w32 (Mul w32 128(ReadLSB w32 0 bid_arr_k0_0))(ReadLSB w32 0 tid_arr_k0_0))100)" color=green shape = rectangle];
+Branch_4 [label = <<table><tr><td>"  br i1 %14, label %16, label %21, !dbg !987, !br-S-S !986"</td></tr><tr><td>"(Eq 1(SRem w32 (Add w32 (Mul w32 128(ReadLSB w32 0 bid_arr_k0_0))(ReadLSB w32 0 tid_arr_k0_0))2))"</td></tr></table>> color = orange shape = invhouse];
+"Flow_0_3" -> "Branch_4";
+Flow_3_5 [label="flow 3:" color=green shape = rectangle];
+Flow_2_2 -> Flow_3_5 [label = "spawn" color = purple];
+"Flow_3_5" -> "Branch_4";
+"Branch_4" -> "Flow_0_6";
+Flow_0_6 [label="flow 0:(And (Slt N0:(Add w32 (Mul w32 128(ReadLSB w32 0 bid_arr_k0_0))(ReadLSB w32 0 tid_arr_k0_0))100)(Eq 1 (SRem w32 N0 2)))" color=green shape = rectangle];
+"Flow_0_6" -> "return";
+"Branch_4" -> "Flow_3_7";
+Flow_3_7 [label="flow 3:(And (Slt N0:(Add w32 (Mul w32 128(ReadLSB w32 0 bid_arr_k0_0))(ReadLSB w32 0 tid_arr_k0_0))100)(Eq false(Eq 1 (SRem w32 N0 2))))" color=green shape = rectangle];
+"Flow_3_7" -> "return";
+"Branch_1" -> "Flow_2_8";
+Flow_2_8 [label="flow 2:(Eq false(Slt (Add w32 (Mul w32 128(ReadLSB w32 0 bid_arr_k0_0))(ReadLSB w32 0 tid_arr_k0_0))100))" color=green shape = rectangle];
+"Flow_2_8" -> "return";
+}

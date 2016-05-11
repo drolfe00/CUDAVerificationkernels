@@ -1,0 +1,69 @@
+Tue May 10 06:12:59 MDT 2016
+Configuration: concurrency bug checking level is: 2
+
+[GKLEE]: The configuration, Grid: <2, 1, 1>, Block: <64, 1, 1>
+
+[GKLEE]: Start executing a GPU kernel 
+
+Thread 0 reaches a barrier: moving to the next thread.
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking bank conflicts at SharedMemory  **********
+[GKLEE]: The read set is empty in bank conflict checking for capability 2.x
+[GKLEE]: The write set is empty in bank conflict checking for capability 2.x
+[GKLEE]: ********** No Bank Conflict found at this SharedMemory **********
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking coalesced device memory access at capability: 2.x **********
+[GKLEE]: The read set for memory coalescing cap 2 is empty
+[GKLEE]: ********** All memory accesses are coalesced at capability: 2.x **********
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking warp divergence  **********
+[GKLEE]: ********** Warp Divergence not found for this kernel **********
+
+[GKLEE]: ********** (Symbolic Config) Start checking missed volatile at SharedMemory  ********** 
+[GKLEE]: ********** No 'Volatile' Qualifier Missed at this SharedMemory **********
+
+[GKLEE]: ********** (Symbolic Config) Start checking races at SharedMemory  **********
+[GKLEE]: ++++++++++ Read-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ++++++++++ Write-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ********** no races found at SharedMemory ***********
+
+[GKLEE]: ********** (Symbolic Config) Start checking races at DeviceMemory (Within Same Block)  **********
+[GKLEE]: ++++++++++ Read-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ++++++++++ Write-Write race checking (Pure Canonical Schedule) ++++++++++
+
+[GKLEE]: ********** (Symbolic Config) Start checking races at DeviceMemory (Across Blocks)  **********
+No Prefer Cex
+[GKLEE]: ++++++++++
+[GKLEE]: Access1: 
+[GKLEE] Inst: 
+Instruction Line: 6, In File: inter_block_race.cpp, With Dir Path: /home/dan/classes/rigorousSystemDesign/project/sourceFiles/gklee/inter_block_race
+[File: /home/dan/classes/rigorousSystemDesign/project/sourceFiles/gklee/inter_block_race/inter_block_race.cpp, Line: 6, Inst:   in[threadIdx.x] = blockIdx.x;]
+<W: 43558432, 0:1> 
+[GKLEE]: Access2: 
+[GKLEE] Inst: 
+Instruction Line: 6, In File: inter_block_race.cpp, With Dir Path: /home/dan/classes/rigorousSystemDesign/project/sourceFiles/gklee/inter_block_race
+[File: /home/dan/classes/rigorousSystemDesign/project/sourceFiles/gklee/inter_block_race/inter_block_race.cpp, Line: 6, Inst:   in[threadIdx.x] = blockIdx.x;]
+<W: 43558432, 0:0> 
+[GKLEE]: Thread 1 : { <1, 0, 0>, <0, 0, 0> } and Thread 2 : { <0, 0, 0>, <0, 0, 0> } incur the (Actual) write-write race
+[GKLEE]: Thread 1's concretized offset: 
+[GKLEE]: Thread 2's concretized offset: 
+[GKLEE]: Thread 1 resides in BI: 1, Thread 2 resides in BI: 1
+[GKLEE]: ++++++++++
+[GKLEE]: ********* races found at DeviceMemory **********
+path num explored here (symbolic config): 1
+Under symbolic configuration, Across 0 BIs, Total Time: 0
+After exploring 1 paths, the average exploration time (symbolic) is 0s, the total execution time: 0s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** Race found **********
+[GKLEE]: Within the current Barrier Interval, 1 flows are used to represent all threads !
+
+[GKLEE]: Finish executing a GPU kernel 
+
+[GKLEE]: GPU Execution time: 0.042644s
+[GKLEE]: In Barrier Interval 1, Elapsed time for symbolic configuration (Parametric Flow): 0.035698
+Tue May 10 06:13:00 MDT 2016
+Time lapse in milli seconds
+777

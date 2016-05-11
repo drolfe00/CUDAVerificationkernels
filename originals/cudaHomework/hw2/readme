@@ -1,0 +1,30 @@
+2 - global memory implementation
+this is the sobel1 host and kernel functions
+
+3 - optimized version
+my optimization was to implement the GPU version using shared memory
+
+4 - extra credit(ish)
+I was able to run my implementations using a few different block sizes/ thread compositions, more details below.  All timing reported is for the kernel/guts of the calculations only.  I had original timing code around the mallocs but it was impossible to distinguish speedup when including inconsistent malloc times
+
+timing, run on gradlab8 - there were other students connected but I doubt they were working on this, it's 6 am
+
+
+blocksize 8
+cpu		gpu		gpu optimized		gpu speedup
+8.97		0.633		0.482			~1.31x
+
+
+blocksize 16
+cpu		gpu		gpu optimized 		gpu speedup
+9.184		1.012		0.500			~2x
+
+
+blocksize 32
+cpu		gpu		gpu optimized		gpu speedup
+8.93		1.777		0.468			~3.79x
+
+blocksize 64
+This failed miserably... not really, but it wouldn't run.  Cannot hold that muchdata to run with.
+
+The shared memory (optimized) version of the gpu code seems to provide more stable results when introducing blocksize changes.  Interestingly enough the global memory version is still considerably faster than the single threaded implementation.

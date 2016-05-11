@@ -1,0 +1,30 @@
+KLEE: output directory = "klee-out-10"
+KLEE: WARNING: undefined reference to function: __clear_device
+KLEE: WARNING: undefined reference to function: __clear_host
+KLEE: WARNING: undefined reference to function: __set_CUDAConfig
+KLEE: WARNING: undefined reference to function: __set_device
+KLEE: WARNING: undefined reference to function: __set_host
+KLEE: WARNING: undefined reference to function: atoi
+KLEE: WARNING: undefined reference to variable: blockDim
+KLEE: WARNING: undefined reference to variable: blockIdx
+KLEE: WARNING: undefined reference to function: ceilf
+KLEE: WARNING: undefined reference to function: fclose
+KLEE: WARNING: undefined reference to function: fopen
+KLEE: WARNING: undefined reference to function: fprintf
+KLEE: WARNING: undefined reference to function: fread
+KLEE: WARNING: undefined reference to function: fseek
+KLEE: WARNING: undefined reference to function: printf
+KLEE: WARNING: undefined reference to function: sprintf
+KLEE: WARNING: undefined reference to function: sscanf
+KLEE: WARNING: undefined reference to variable: stderr
+KLEE: WARNING: undefined reference to function: strdup
+KLEE: WARNING: undefined reference to function: strlen
+KLEE: WARNING: undefined reference to function: strstr
+KLEE: WARNING: undefined reference to variable: threadIdx
+KLEE: WARNING: calling external: strdup()
+KLEE: ERROR: /home/dan/classes/rigorousSystemDesign/project/sourceFiles/gklee/hw2/sobel.cpp:234: memory error: out of bound pointer
+KLEE: NOTE: now ignoring this error at this location
+
+KLEE: done: total instructions = 198
+KLEE: done: completed paths = 1
+KLEE: done: generated tests = 1

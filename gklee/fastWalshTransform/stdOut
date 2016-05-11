@@ -1,0 +1,1196 @@
+Tue May 10 04:30:35 MDT 2016
+Configuration: concurrency bug checking level is: 2
+gkleefastWalshTransform Starting...
+
+Initializing data...
+...allocating CPU memory
+...allocating GPU memory
+...generating data
+Data length: 4096; kernel length: 64
+Running GPU dyadic convolution using Fast Walsh Transform...
+
+[GKLEE]: The configuration, Grid: <4, 1, 1>, Block: <256, 1, 1>
+
+[GKLEE]: Start executing a GPU kernel 
+
+Thread 0 reaches a barrier: moving to the next thread.
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking bank conflicts at SharedMemory  **********
+[GKLEE]: The read set is empty in bank conflict checking for capability 2.x
+[GKLEE]: The write set is empty in bank conflict checking for capability 2.x
+[GKLEE]: ********** No Bank Conflict found at this SharedMemory **********
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking coalesced device memory access at capability: 2.x **********
+[GKLEE]: ********** All memory accesses are coalesced at capability: 2.x **********
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking warp divergence  **********
+[GKLEE]: ********** Warp Divergence not found for this kernel **********
+
+[GKLEE]: ********** (Symbolic Config) Start checking missed volatile at SharedMemory  ********** 
+[GKLEE]: ********** No 'Volatile' Qualifier Missed at this SharedMemory **********
+
+[GKLEE]: ********** (Symbolic Config) Start checking races at SharedMemory  **********
+[GKLEE]: ++++++++++ Read-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ++++++++++ Write-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ********** no races found at SharedMemory ***********
+
+[GKLEE]: ********** (Symbolic Config) Start checking races at DeviceMemory (Within Same Block)  **********
+[GKLEE]: ++++++++++ Read-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ++++++++++ Write-Write race checking (Pure Canonical Schedule) ++++++++++
+
+[GKLEE]: ********** (Symbolic Config) Start checking races at DeviceMemory (Across Blocks)  **********
+[GKLEE]: ********* no races found at DeviceMemory **********
+[GKLEE]: Within the current Barrier Interval, 1 flows are used to represent all threads !
+
+[GKLEE]: Finish executing a GPU kernel 
+
+[GKLEE]: GPU Execution time: 9.80127s
+[GKLEE]: In Barrier Interval 1, Elapsed time for symbolic configuration (Parametric Flow): 0.357139
+fwtBatch2Kernel() execution failed
+
+[GKLEE]: The configuration, Grid: <4, 1, 1>, Block: <256, 1, 1>
+
+[GKLEE]: Start executing a GPU kernel 
+
+[GKLEE]: 'True' path flow feasible !
+[GKLEE]: 'Else' path flow infeasible !
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <0, 0>, <0, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 1
+<BI: 1, Time: 0.357139>
+Under symbolic configuration, Across 1 BIs, Total Time: 0.357139
+After exploring 1 paths, the average exploration time (symbolic) is 0.357139s, the total execution time: 0.357139s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <0, 0>, <208, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 2
+<BI: 1, Time: 0.357139>
+Under symbolic configuration, Across 1 BIs, Total Time: 0.357139
+After exploring 2 paths, the average exploration time (symbolic) is 0.357139s, the total execution time: 0.714278s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <0, 0>, <0, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 3
+<BI: 1, Time: 0.357139>
+Under symbolic configuration, Across 1 BIs, Total Time: 0.357139
+After exploring 3 paths, the average exploration time (symbolic) is 0.357139s, the total execution time: 1.07142s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <3, 0>, <208, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 4
+<BI: 1, Time: 0.357139>
+Under symbolic configuration, Across 1 BIs, Total Time: 0.357139
+After exploring 4 paths, the average exploration time (symbolic) is 0.357139s, the total execution time: 1.42856s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <0, 0>, <0, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 5
+<BI: 1, Time: 0.357139>
+Under symbolic configuration, Across 1 BIs, Total Time: 0.357139
+After exploring 5 paths, the average exploration time (symbolic) is 0.357139s, the total execution time: 1.7857s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+Thread 0 reaches a barrier: moving to the next thread.
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking bank conflicts at SharedMemory  **********
+[GKLEE]: The read set is empty in bank conflict checking for capability 2.x
+[GKLEE]: The write set is empty in bank conflict checking for capability 2.x
+[GKLEE]: ********** No Bank Conflict found at this SharedMemory **********
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking coalesced device memory access at capability: 2.x **********
+[GKLEE]: The write set for memory coalescing cap 2 is empty
+[GKLEE]: ********** All memory accesses are coalesced at capability: 2.x **********
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking warp divergence  **********
+[GKLEE]: ********** Warp Divergence not found for this kernel **********
+
+[GKLEE]: ********** (Symbolic Config) Start checking missed volatile at SharedMemory  ********** 
+[GKLEE]: ********** No 'Volatile' Qualifier Missed at this SharedMemory **********
+
+[GKLEE]: ********** (Symbolic Config) Start checking races at SharedMemory  **********
+[GKLEE]: ++++++++++ Read-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ++++++++++ Write-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ********** no races found at SharedMemory ***********
+
+[GKLEE]: ********** (Symbolic Config) Start checking races at DeviceMemory (Within Same Block)  **********
+[GKLEE]: ++++++++++ Read-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ++++++++++ Write-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ********* no races found at DeviceMemory **********
+[GKLEE]: Within the current Barrier Interval, 1 flows are used to represent all threads !
+[GKLEE]: In Barrier Interval 1, Elapsed time for symbolic configuration (Parametric Flow): 2.03095
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <0, 0>, <1, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 6
+<BI: 2, Time: 2.03095>
+Under symbolic configuration, Across 2 BIs, Total Time: 2.03095
+After exploring 6 paths, the average exploration time (symbolic) is 0.636107s, the total execution time: 3.81664s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <0, 0>, <0, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 7
+<BI: 2, Time: 2.03095>
+Under symbolic configuration, Across 2 BIs, Total Time: 2.03095
+After exploring 7 paths, the average exploration time (symbolic) is 0.83537s, the total execution time: 5.84759s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <0, 0>, <0, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 8
+<BI: 2, Time: 2.03095>
+Under symbolic configuration, Across 2 BIs, Total Time: 2.03095
+After exploring 8 paths, the average exploration time (symbolic) is 0.984817s, the total execution time: 7.87854s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+path num explored here (symbolic config): 9
+<BI: 2, Time: 2.03095>
+Under symbolic configuration, Across 2 BIs, Total Time: 2.03095
+After exploring 9 paths, the average exploration time (symbolic) is 1.10105s, the total execution time: 9.90948s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+path num explored here (symbolic config): 10
+<BI: 2, Time: 2.03095>
+Under symbolic configuration, Across 2 BIs, Total Time: 2.03095
+After exploring 10 paths, the average exploration time (symbolic) is 1.19404s, the total execution time: 11.9404s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <0, 0>, <0, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 11
+<BI: 2, Time: 2.03095>
+Under symbolic configuration, Across 2 BIs, Total Time: 2.03095
+After exploring 11 paths, the average exploration time (symbolic) is 1.27013s, the total execution time: 13.9714s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+path num explored here (symbolic config): 12
+<BI: 2, Time: 2.03095>
+Under symbolic configuration, Across 2 BIs, Total Time: 2.03095
+After exploring 12 paths, the average exploration time (symbolic) is 1.33353s, the total execution time: 16.0023s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+path num explored here (symbolic config): 13
+<BI: 2, Time: 2.03095>
+Under symbolic configuration, Across 2 BIs, Total Time: 2.03095
+After exploring 13 paths, the average exploration time (symbolic) is 1.38717s, the total execution time: 18.0333s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <0, 0>, <0, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 14
+<BI: 2, Time: 2.03095>
+Under symbolic configuration, Across 2 BIs, Total Time: 2.03095
+After exploring 14 paths, the average exploration time (symbolic) is 1.43316s, the total execution time: 20.0642s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+path num explored here (symbolic config): 15
+<BI: 2, Time: 2.03095>
+Under symbolic configuration, Across 2 BIs, Total Time: 2.03095
+After exploring 15 paths, the average exploration time (symbolic) is 1.47301s, the total execution time: 22.0952s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+path num explored here (symbolic config): 16
+<BI: 1, Time: 0.357139>
+<BI: 2, Time: 2.03095>
+Under symbolic configuration, Across 2 BIs, Total Time: 2.38809
+After exploring 16 paths, the average exploration time (symbolic) is 1.5302s, the total execution time: 24.4833s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+path num explored here (symbolic config): 17
+<BI: 1, Time: 0.357139>
+Under symbolic configuration, Across 1 BIs, Total Time: 0.357139
+After exploring 17 paths, the average exploration time (symbolic) is 1.4612s, the total execution time: 24.8404s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+Thread 0 reaches a barrier: moving to the next thread.
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking bank conflicts at SharedMemory  **********
+[GKLEE]: The read set is empty in bank conflict checking for capability 2.x
+[GKLEE]: The write set is empty in bank conflict checking for capability 2.x
+[GKLEE]: ********** No Bank Conflict found at this SharedMemory **********
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking coalesced device memory access at capability: 2.x **********
+[GKLEE]: The write set for memory coalescing cap 2 is empty
+[GKLEE]: ********** All memory accesses are coalesced at capability: 2.x **********
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking warp divergence  **********
+[GKLEE]: ********** Warp Divergence not found for this kernel **********
+
+[GKLEE]: ********** (Symbolic Config) Start checking missed volatile at SharedMemory  ********** 
+[GKLEE]: ********** No 'Volatile' Qualifier Missed at this SharedMemory **********
+
+[GKLEE]: ********** (Symbolic Config) Start checking races at SharedMemory  **********
+[GKLEE]: ++++++++++ Read-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ++++++++++ Write-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ********** no races found at SharedMemory ***********
+
+[GKLEE]: ********** (Symbolic Config) Start checking races at DeviceMemory (Within Same Block)  **********
+[GKLEE]: ++++++++++ Read-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ++++++++++ Write-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ********* no races found at DeviceMemory **********
+[GKLEE]: Within the current Barrier Interval, 1 flows are used to represent all threads !
+[GKLEE]: In Barrier Interval 1, Elapsed time for symbolic configuration (Parametric Flow): 1.84657
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <0, 0>, <1, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 18
+<BI: 2, Time: 1.84657>
+Under symbolic configuration, Across 2 BIs, Total Time: 1.84657
+After exploring 18 paths, the average exploration time (symbolic) is 1.48261s, the total execution time: 26.687s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <0, 0>, <0, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 19
+<BI: 2, Time: 1.84657>
+Under symbolic configuration, Across 2 BIs, Total Time: 1.84657
+After exploring 19 paths, the average exploration time (symbolic) is 1.50176s, the total execution time: 28.5335s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <0, 0>, <0, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 20
+<BI: 2, Time: 1.84657>
+Under symbolic configuration, Across 2 BIs, Total Time: 1.84657
+After exploring 20 paths, the average exploration time (symbolic) is 1.519s, the total execution time: 30.3801s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+path num explored here (symbolic config): 21
+<BI: 2, Time: 1.84657>
+Under symbolic configuration, Across 2 BIs, Total Time: 1.84657
+After exploring 21 paths, the average exploration time (symbolic) is 1.5346s, the total execution time: 32.2266s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+path num explored here (symbolic config): 22
+<BI: 2, Time: 1.84657>
+Under symbolic configuration, Across 2 BIs, Total Time: 1.84657
+After exploring 22 paths, the average exploration time (symbolic) is 1.54878s, the total execution time: 34.0732s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <0, 0>, <0, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 23
+<BI: 2, Time: 1.84657>
+Under symbolic configuration, Across 2 BIs, Total Time: 1.84657
+After exploring 23 paths, the average exploration time (symbolic) is 1.56173s, the total execution time: 35.9198s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+path num explored here (symbolic config): 24
+<BI: 2, Time: 1.84657>
+Under symbolic configuration, Across 2 BIs, Total Time: 1.84657
+After exploring 24 paths, the average exploration time (symbolic) is 1.5736s, the total execution time: 37.7663s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+path num explored here (symbolic config): 25
+<BI: 2, Time: 1.84657>
+Under symbolic configuration, Across 2 BIs, Total Time: 1.84657
+After exploring 25 paths, the average exploration time (symbolic) is 1.58452s, the total execution time: 39.6129s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <0, 0>, <0, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 26
+<BI: 2, Time: 1.84657>
+Under symbolic configuration, Across 2 BIs, Total Time: 1.84657
+After exploring 26 paths, the average exploration time (symbolic) is 1.5946s, the total execution time: 41.4595s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+path num explored here (symbolic config): 27
+<BI: 2, Time: 1.84657>
+Under symbolic configuration, Across 2 BIs, Total Time: 1.84657
+After exploring 27 paths, the average exploration time (symbolic) is 1.60393s, the total execution time: 43.306s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+path num explored here (symbolic config): 28
+<BI: 1, Time: 0.357139>
+<BI: 2, Time: 1.84657>
+Under symbolic configuration, Across 2 BIs, Total Time: 2.2037
+After exploring 28 paths, the average exploration time (symbolic) is 1.62535s, the total execution time: 45.5097s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+path num explored here (symbolic config): 29
+<BI: 1, Time: 0.357139>
+Under symbolic configuration, Across 1 BIs, Total Time: 0.357139
+After exploring 29 paths, the average exploration time (symbolic) is 1.58162s, the total execution time: 45.8669s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <3, 0>, <208, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 30
+<BI: 1, Time: 0.357139>
+Under symbolic configuration, Across 1 BIs, Total Time: 0.357139
+After exploring 30 paths, the average exploration time (symbolic) is 1.5408s, the total execution time: 46.224s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <0, 0>, <0, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 31
+<BI: 1, Time: 0.357139>
+Under symbolic configuration, Across 1 BIs, Total Time: 0.357139
+After exploring 31 paths, the average exploration time (symbolic) is 1.50262s, the total execution time: 46.5812s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+Thread 0 reaches a barrier: moving to the next thread.
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking bank conflicts at SharedMemory  **********
+[GKLEE]: The read set is empty in bank conflict checking for capability 2.x
+[GKLEE]: The write set is empty in bank conflict checking for capability 2.x
+[GKLEE]: ********** No Bank Conflict found at this SharedMemory **********
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking coalesced device memory access at capability: 2.x **********
+[GKLEE]: The write set for memory coalescing cap 2 is empty
+[GKLEE]: ********** All memory accesses are coalesced at capability: 2.x **********
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking warp divergence  **********
+[GKLEE]: ********** Warp Divergence not found for this kernel **********
+
+[GKLEE]: ********** (Symbolic Config) Start checking missed volatile at SharedMemory  ********** 
+[GKLEE]: ********** No 'Volatile' Qualifier Missed at this SharedMemory **********
+
+[GKLEE]: ********** (Symbolic Config) Start checking races at SharedMemory  **********
+[GKLEE]: ++++++++++ Read-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ++++++++++ Write-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ********** no races found at SharedMemory ***********
+
+[GKLEE]: ********** (Symbolic Config) Start checking races at DeviceMemory (Within Same Block)  **********
+[GKLEE]: ++++++++++ Read-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ++++++++++ Write-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ********* no races found at DeviceMemory **********
+[GKLEE]: Within the current Barrier Interval, 1 flows are used to represent all threads !
+[GKLEE]: In Barrier Interval 1, Elapsed time for symbolic configuration (Parametric Flow): 0.476233
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <0, 0>, <1, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 32
+<BI: 2, Time: 0.476233>
+Under symbolic configuration, Across 2 BIs, Total Time: 0.476233
+After exploring 32 paths, the average exploration time (symbolic) is 1.47054s, the total execution time: 47.0574s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <0, 0>, <0, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 33
+<BI: 2, Time: 0.476233>
+Under symbolic configuration, Across 2 BIs, Total Time: 0.476233
+After exploring 33 paths, the average exploration time (symbolic) is 1.44041s, the total execution time: 47.5336s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <0, 0>, <0, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 34
+<BI: 2, Time: 0.476233>
+Under symbolic configuration, Across 2 BIs, Total Time: 0.476233
+After exploring 34 paths, the average exploration time (symbolic) is 1.41205s, the total execution time: 48.0099s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+path num explored here (symbolic config): 35
+<BI: 2, Time: 0.476233>
+Under symbolic configuration, Across 2 BIs, Total Time: 0.476233
+After exploring 35 paths, the average exploration time (symbolic) is 1.38532s, the total execution time: 48.4861s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+path num explored here (symbolic config): 36
+<BI: 2, Time: 0.476233>
+Under symbolic configuration, Across 2 BIs, Total Time: 0.476233
+After exploring 36 paths, the average exploration time (symbolic) is 1.36006s, the total execution time: 48.9623s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <0, 0>, <0, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 37
+<BI: 2, Time: 0.476233>
+Under symbolic configuration, Across 2 BIs, Total Time: 0.476233
+After exploring 37 paths, the average exploration time (symbolic) is 1.33618s, the total execution time: 49.4386s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+path num explored here (symbolic config): 38
+<BI: 2, Time: 0.476233>
+Under symbolic configuration, Across 2 BIs, Total Time: 0.476233
+After exploring 38 paths, the average exploration time (symbolic) is 1.31355s, the total execution time: 49.9148s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+path num explored here (symbolic config): 39
+<BI: 2, Time: 0.476233>
+Under symbolic configuration, Across 2 BIs, Total Time: 0.476233
+After exploring 39 paths, the average exploration time (symbolic) is 1.29208s, the total execution time: 50.391s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <0, 0>, <0, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 40
+<BI: 2, Time: 0.476233>
+Under symbolic configuration, Across 2 BIs, Total Time: 0.476233
+After exploring 40 paths, the average exploration time (symbolic) is 1.27168s, the total execution time: 50.8673s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+path num explored here (symbolic config): 41
+<BI: 2, Time: 0.476233>
+Under symbolic configuration, Across 2 BIs, Total Time: 0.476233
+After exploring 41 paths, the average exploration time (symbolic) is 1.25228s, the total execution time: 51.3435s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+path num explored here (symbolic config): 42
+<BI: 1, Time: 0.357139>
+<BI: 2, Time: 0.476233>
+Under symbolic configuration, Across 2 BIs, Total Time: 0.833372
+After exploring 42 paths, the average exploration time (symbolic) is 1.24231s, the total execution time: 52.1769s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+path num explored here (symbolic config): 43
+<BI: 1, Time: 0.357139>
+Under symbolic configuration, Across 1 BIs, Total Time: 0.357139
+After exploring 43 paths, the average exploration time (symbolic) is 1.22172s, the total execution time: 52.534s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+Thread 0 reaches a barrier: moving to the next thread.
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking bank conflicts at SharedMemory  **********
+[GKLEE]: The read set is empty in bank conflict checking for capability 2.x
+[GKLEE]: The write set is empty in bank conflict checking for capability 2.x
+[GKLEE]: ********** No Bank Conflict found at this SharedMemory **********
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking coalesced device memory access at capability: 2.x **********
+[GKLEE]: The write set for memory coalescing cap 2 is empty
+[GKLEE]: ********** All memory accesses are coalesced at capability: 2.x **********
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking warp divergence  **********
+[GKLEE]: ********** Warp Divergence not found for this kernel **********
+
+[GKLEE]: ********** (Symbolic Config) Start checking missed volatile at SharedMemory  ********** 
+[GKLEE]: ********** No 'Volatile' Qualifier Missed at this SharedMemory **********
+
+[GKLEE]: ********** (Symbolic Config) Start checking races at SharedMemory  **********
+[GKLEE]: ++++++++++ Read-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ++++++++++ Write-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ********** no races found at SharedMemory ***********
+
+[GKLEE]: ********** (Symbolic Config) Start checking races at DeviceMemory (Within Same Block)  **********
+[GKLEE]: ++++++++++ Read-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ++++++++++ Write-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ********* no races found at DeviceMemory **********
+[GKLEE]: Within the current Barrier Interval, 1 flows are used to represent all threads !
+[GKLEE]: In Barrier Interval 1, Elapsed time for symbolic configuration (Parametric Flow): 0.187481
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <0, 0>, <1, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 44
+<BI: 2, Time: 0.187481>
+Under symbolic configuration, Across 2 BIs, Total Time: 0.187481
+After exploring 44 paths, the average exploration time (symbolic) is 1.19822s, the total execution time: 52.7215s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <0, 0>, <0, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 45
+<BI: 2, Time: 0.187481>
+Under symbolic configuration, Across 2 BIs, Total Time: 0.187481
+After exploring 45 paths, the average exploration time (symbolic) is 1.17575s, the total execution time: 52.909s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <0, 0>, <0, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 46
+<BI: 2, Time: 0.187481>
+Under symbolic configuration, Across 2 BIs, Total Time: 0.187481
+After exploring 46 paths, the average exploration time (symbolic) is 1.15427s, the total execution time: 53.0964s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+path num explored here (symbolic config): 47
+<BI: 2, Time: 0.187481>
+Under symbolic configuration, Across 2 BIs, Total Time: 0.187481
+After exploring 47 paths, the average exploration time (symbolic) is 1.1337s, the total execution time: 53.2839s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+path num explored here (symbolic config): 48
+<BI: 2, Time: 0.187481>
+Under symbolic configuration, Across 2 BIs, Total Time: 0.187481
+After exploring 48 paths, the average exploration time (symbolic) is 1.11399s, the total execution time: 53.4714s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <0, 0>, <0, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 49
+<BI: 2, Time: 0.187481>
+Under symbolic configuration, Across 2 BIs, Total Time: 0.187481
+After exploring 49 paths, the average exploration time (symbolic) is 1.09508s, the total execution time: 53.6589s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+path num explored here (symbolic config): 50
+<BI: 2, Time: 0.187481>
+Under symbolic configuration, Across 2 BIs, Total Time: 0.187481
+After exploring 50 paths, the average exploration time (symbolic) is 1.07693s, the total execution time: 53.8464s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+path num explored here (symbolic config): 51
+<BI: 2, Time: 0.187481>
+Under symbolic configuration, Across 2 BIs, Total Time: 0.187481
+After exploring 51 paths, the average exploration time (symbolic) is 1.05949s, the total execution time: 54.0338s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <0, 0>, <0, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 52
+<BI: 2, Time: 0.187481>
+Under symbolic configuration, Across 2 BIs, Total Time: 0.187481
+After exploring 52 paths, the average exploration time (symbolic) is 1.04272s, the total execution time: 54.2213s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+path num explored here (symbolic config): 53
+<BI: 2, Time: 0.187481>
+Under symbolic configuration, Across 2 BIs, Total Time: 0.187481
+After exploring 53 paths, the average exploration time (symbolic) is 1.02658s, the total execution time: 54.4088s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+path num explored here (symbolic config): 54
+<BI: 1, Time: 0.357139>
+<BI: 2, Time: 0.187481>
+Under symbolic configuration, Across 2 BIs, Total Time: 0.54462
+After exploring 54 paths, the average exploration time (symbolic) is 1.01766s, the total execution time: 54.9534s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+path num explored here (symbolic config): 55
+<BI: 1, Time: 0.357139>
+Under symbolic configuration, Across 1 BIs, Total Time: 0.357139
+After exploring 55 paths, the average exploration time (symbolic) is 1.00565s, the total execution time: 55.3106s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <3, 0>, <208, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 56
+<BI: 1, Time: 0.357139>
+Under symbolic configuration, Across 1 BIs, Total Time: 0.357139
+After exploring 56 paths, the average exploration time (symbolic) is 0.994066s, the total execution time: 55.6677s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <0, 0>, <0, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 57
+<BI: 1, Time: 0.357139>
+Under symbolic configuration, Across 1 BIs, Total Time: 0.357139
+After exploring 57 paths, the average exploration time (symbolic) is 0.982892s, the total execution time: 56.0248s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+Thread 0 reaches a barrier: moving to the next thread.
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking bank conflicts at SharedMemory  **********
+[GKLEE]: The read set is empty in bank conflict checking for capability 2.x
+[GKLEE]: The write set is empty in bank conflict checking for capability 2.x
+[GKLEE]: ********** No Bank Conflict found at this SharedMemory **********
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking coalesced device memory access at capability: 2.x **********
+[GKLEE]: The write set for memory coalescing cap 2 is empty
+[GKLEE]: ********** All memory accesses are coalesced at capability: 2.x **********
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking warp divergence  **********
+[GKLEE]: ********** Warp Divergence not found for this kernel **********
+
+[GKLEE]: ********** (Symbolic Config) Start checking missed volatile at SharedMemory  ********** 
+[GKLEE]: ********** No 'Volatile' Qualifier Missed at this SharedMemory **********
+
+[GKLEE]: ********** (Symbolic Config) Start checking races at SharedMemory  **********
+[GKLEE]: ++++++++++ Read-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ++++++++++ Write-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ********** no races found at SharedMemory ***********
+
+[GKLEE]: ********** (Symbolic Config) Start checking races at DeviceMemory (Within Same Block)  **********
+[GKLEE]: ++++++++++ Read-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ++++++++++ Write-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ********* no races found at DeviceMemory **********
+[GKLEE]: Within the current Barrier Interval, 1 flows are used to represent all threads !
+[GKLEE]: In Barrier Interval 1, Elapsed time for symbolic configuration (Parametric Flow): 0.258587
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <0, 0>, <1, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 58
+<BI: 2, Time: 0.258587>
+Under symbolic configuration, Across 2 BIs, Total Time: 0.258587
+After exploring 58 paths, the average exploration time (symbolic) is 0.970404s, the total execution time: 56.2834s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <0, 0>, <0, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 59
+<BI: 2, Time: 0.258587>
+Under symbolic configuration, Across 2 BIs, Total Time: 0.258587
+After exploring 59 paths, the average exploration time (symbolic) is 0.958339s, the total execution time: 56.542s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <0, 0>, <0, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 60
+<BI: 2, Time: 0.258587>
+Under symbolic configuration, Across 2 BIs, Total Time: 0.258587
+After exploring 60 paths, the average exploration time (symbolic) is 0.946677s, the total execution time: 56.8006s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+path num explored here (symbolic config): 61
+<BI: 2, Time: 0.258587>
+Under symbolic configuration, Across 2 BIs, Total Time: 0.258587
+After exploring 61 paths, the average exploration time (symbolic) is 0.935397s, the total execution time: 57.0592s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+path num explored here (symbolic config): 62
+<BI: 2, Time: 0.258587>
+Under symbolic configuration, Across 2 BIs, Total Time: 0.258587
+After exploring 62 paths, the average exploration time (symbolic) is 0.92448s, the total execution time: 57.3178s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <0, 0>, <0, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 63
+<BI: 2, Time: 0.258587>
+Under symbolic configuration, Across 2 BIs, Total Time: 0.258587
+After exploring 63 paths, the average exploration time (symbolic) is 0.913911s, the total execution time: 57.5764s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+path num explored here (symbolic config): 64
+<BI: 2, Time: 0.258587>
+Under symbolic configuration, Across 2 BIs, Total Time: 0.258587
+After exploring 64 paths, the average exploration time (symbolic) is 0.903671s, the total execution time: 57.835s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+path num explored here (symbolic config): 65
+<BI: 2, Time: 0.258587>
+Under symbolic configuration, Across 2 BIs, Total Time: 0.258587
+After exploring 65 paths, the average exploration time (symbolic) is 0.893747s, the total execution time: 58.0935s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <0, 0>, <0, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 66
+<BI: 2, Time: 0.258587>
+Under symbolic configuration, Across 2 BIs, Total Time: 0.258587
+After exploring 66 paths, the average exploration time (symbolic) is 0.884123s, the total execution time: 58.3521s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+path num explored here (symbolic config): 67
+<BI: 2, Time: 0.258587>
+Under symbolic configuration, Across 2 BIs, Total Time: 0.258587
+After exploring 67 paths, the average exploration time (symbolic) is 0.874787s, the total execution time: 58.6107s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+path num explored here (symbolic config): 68
+<BI: 1, Time: 0.357139>
+<BI: 2, Time: 0.258587>
+Under symbolic configuration, Across 2 BIs, Total Time: 0.615726
+After exploring 68 paths, the average exploration time (symbolic) is 0.870977s, the total execution time: 59.2264s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+path num explored here (symbolic config): 69
+<BI: 1, Time: 0.357139>
+Under symbolic configuration, Across 1 BIs, Total Time: 0.357139
+After exploring 69 paths, the average exploration time (symbolic) is 0.86353s, the total execution time: 59.5836s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+Thread 0 reaches a barrier: moving to the next thread.
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking bank conflicts at SharedMemory  **********
+[GKLEE]: The read set is empty in bank conflict checking for capability 2.x
+[GKLEE]: The write set is empty in bank conflict checking for capability 2.x
+[GKLEE]: ********** No Bank Conflict found at this SharedMemory **********
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking coalesced device memory access at capability: 2.x **********
+[GKLEE]: The write set for memory coalescing cap 2 is empty
+[GKLEE]: ********** All memory accesses are coalesced at capability: 2.x **********
+
+[GKLEE]: ********** (Symbolic Configuration) Start checking warp divergence  **********
+[GKLEE]: ********** Warp Divergence not found for this kernel **********
+
+[GKLEE]: ********** (Symbolic Config) Start checking missed volatile at SharedMemory  ********** 
+[GKLEE]: ********** No 'Volatile' Qualifier Missed at this SharedMemory **********
+
+[GKLEE]: ********** (Symbolic Config) Start checking races at SharedMemory  **********
+[GKLEE]: ++++++++++ Read-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ++++++++++ Write-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ********** no races found at SharedMemory ***********
+
+[GKLEE]: ********** (Symbolic Config) Start checking races at DeviceMemory (Within Same Block)  **********
+[GKLEE]: ++++++++++ Read-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ++++++++++ Write-Write race checking (Pure Canonical Schedule) ++++++++++
+[GKLEE]: ********* no races found at DeviceMemory **********
+[GKLEE]: Within the current Barrier Interval, 1 flows are used to represent all threads !
+[GKLEE]: In Barrier Interval 1, Elapsed time for symbolic configuration (Parametric Flow): 0.183969
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <0, 0>, <1, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 70
+<BI: 2, Time: 0.183969>
+Under symbolic configuration, Across 2 BIs, Total Time: 0.183969
+After exploring 70 paths, the average exploration time (symbolic) is 0.853822s, the total execution time: 59.7676s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <0, 0>, <0, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 71
+<BI: 2, Time: 0.183969>
+Under symbolic configuration, Across 2 BIs, Total Time: 0.183969
+After exploring 71 paths, the average exploration time (symbolic) is 0.844388s, the total execution time: 59.9515s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <0, 0>, <0, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 72
+<BI: 2, Time: 0.183969>
+Under symbolic configuration, Across 2 BIs, Total Time: 0.183969
+After exploring 72 paths, the average exploration time (symbolic) is 0.835215s, the total execution time: 60.1355s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+path num explored here (symbolic config): 73
+<BI: 2, Time: 0.183969>
+Under symbolic configuration, Across 2 BIs, Total Time: 0.183969
+After exploring 73 paths, the average exploration time (symbolic) is 0.826294s, the total execution time: 60.3195s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+path num explored here (symbolic config): 74
+<BI: 2, Time: 0.183969>
+Under symbolic configuration, Across 2 BIs, Total Time: 0.183969
+After exploring 74 paths, the average exploration time (symbolic) is 0.817614s, the total execution time: 60.5034s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <0, 0>, <0, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 75
+<BI: 2, Time: 0.183969>
+Under symbolic configuration, Across 2 BIs, Total Time: 0.183969
+After exploring 75 paths, the average exploration time (symbolic) is 0.809165s, the total execution time: 60.6874s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+path num explored here (symbolic config): 76
+<BI: 2, Time: 0.183969>
+Under symbolic configuration, Across 2 BIs, Total Time: 0.183969
+After exploring 76 paths, the average exploration time (symbolic) is 0.800939s, the total execution time: 60.8714s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+path num explored here (symbolic config): 77
+<BI: 2, Time: 0.183969>
+Under symbolic configuration, Across 2 BIs, Total Time: 0.183969
+After exploring 77 paths, the average exploration time (symbolic) is 0.792926s, the total execution time: 61.0553s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+No Prefer Cex
++++++++++++++++
+OOB cond: 
+Thread : { <0, 0>, <0, 0, 0> } incurs out of bound error!
+The concretized offset: 
++++++++++++++++
+path num explored here (symbolic config): 78
+<BI: 2, Time: 0.183969>
+Under symbolic configuration, Across 2 BIs, Total Time: 0.183969
+After exploring 78 paths, the average exploration time (symbolic) is 0.785119s, the total execution time: 61.2393s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+path num explored here (symbolic config): 79
+<BI: 2, Time: 0.183969>
+Under symbolic configuration, Across 2 BIs, Total Time: 0.183969
+After exploring 79 paths, the average exploration time (symbolic) is 0.77751s, the total execution time: 61.4233s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+path num explored here (symbolic config): 80
+<BI: 1, Time: 0.357139>
+<BI: 2, Time: 0.183969>
+Under symbolic configuration, Across 2 BIs, Total Time: 0.541108
+After exploring 80 paths, the average exploration time (symbolic) is 0.774555s, the total execution time: 61.9644s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+path num explored here (symbolic config): 81
+<BI: 1, Time: 0.357139>
+Under symbolic configuration, Across 1 BIs, Total Time: 0.357139
+After exploring 81 paths, the average exploration time (symbolic) is 0.769401s, the total execution time: 62.3215s
+********** No Bank Conflict found **********
+********** Memory Coalescing found **********
+********** No Warp Divergence found **********
+********** No Volatile Missed found *********
+********** No Race found **********
+Tue May 10 04:30:51 MDT 2016
+Time lapse in milli seconds
+15646

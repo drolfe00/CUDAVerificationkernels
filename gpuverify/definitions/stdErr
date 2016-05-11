@@ -1,0 +1,6 @@
+'main' function not found in module.
+0  klee            0x0000000000dad78f
+1  klee            0x0000000000dadb64
+2  libpthread.so.0 0x00007f42bb2339f0
+3  libc.so.6       0x00007f42ba22f288
+/home/dan/classes/rigorousSystemDesign/project/systems/Gklee/bin/gklee: line 2:  9468 Segmentation fault      (core dumped) klee $*

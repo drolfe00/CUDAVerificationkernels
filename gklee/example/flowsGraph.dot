@@ -1,0 +1,16 @@
+digraph kernel{
+kernel;
+"kernel" -> "Flow_0_0";
+Flow_0_0 [label="flow 0:true" color=green shape = rectangle];
+Branch_1 [label = <<table><tr><td>"  br i1 %12, label %13, label %31, !dbg !732, !br-S-S !733"</td></tr><tr><td>"(Slt (Add w32 (Mul w32 256(ReadLSB w32 0 bid_arr_k0_0))(ReadLSB w32 0 tid_arr_k0_0))32)"</td></tr></table>> color = orange shape = invhouse];
+"Flow_0_0" -> "Branch_1";
+Flow_2_2 [label="flow 2:true" color=green shape = rectangle];
+Flow_0_0 -> Flow_2_2 [label = "spawn" color = purple];
+"Flow_2_2" -> "Branch_1";
+"Branch_1" -> "Flow_0_3";
+Flow_0_3 [label="flow 0:(Slt (Add w32 (Mul w32 256(ReadLSB w32 0 bid_arr_k0_0))(ReadLSB w32 0 tid_arr_k0_0))32)" color=green shape = rectangle];
+"Flow_0_3" -> "return";
+"Branch_1" -> "Flow_2_4";
+Flow_2_4 [label="flow 2:(Eq false(Slt (Add w32 (Mul w32 256(ReadLSB w32 0 bid_arr_k0_0))(ReadLSB w32 0 tid_arr_k0_0))32))" color=green shape = rectangle];
+"Flow_2_4" -> "return";
+}

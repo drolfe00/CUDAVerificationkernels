@@ -1,0 +1,20 @@
+digraph kernel{
+kernel;
+"kernel" -> "Flow_0_0";
+Flow_0_0 [label="flow 0:true" color=green shape = rectangle];
+Branch_1 [label = <<table><tr><td>"  br i1 %3, label %4, label %12, !dbg !715, !br-S-S !717"</td></tr><tr><td>"(Ult (ReadLSB w32 0 tid_arr_k0_0)16)"</td></tr></table>> color = orange shape = invhouse];
+"Flow_0_0" -> "Branch_1";
+"Branch_1" -> "Flow_0_2";
+Flow_0_2 [label="flow 0:true" color=green shape = rectangle];
+Branch_3 [label = <<table><tr><td>"  br i1 %7, label %10, label %11, !dbg !718, !br-S-S !717"</td></tr><tr><td>"(Eq 0(URem w32 (ReadLSB w32 0 tid_arr_k0_0)2))"</td></tr></table>> color = orange shape = invhouse];
+"Flow_0_2" -> "Branch_3";
+Flow_2_4 [label="flow 2:true" color=green shape = rectangle];
+Flow_0_2 -> Flow_2_4 [label = "spawn" color = purple];
+"Flow_2_4" -> "Branch_3";
+"Branch_3" -> "Flow_0_5";
+Flow_0_5 [label="flow 0:(Eq 0(URem w32 (ReadLSB w32 0 tid_arr_k0_0)2))" color=green shape = rectangle];
+"Flow_0_5" -> "return";
+"Branch_3" -> "Flow_2_6";
+Flow_2_6 [label="flow 2:(Eq false(Eq 0(URem w32 (ReadLSB w32 0 tid_arr_k0_0)2)))" color=green shape = rectangle];
+"Flow_2_6" -> "return";
+}

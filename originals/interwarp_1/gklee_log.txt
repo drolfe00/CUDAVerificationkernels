@@ -1,0 +1,5 @@
+../execute_test.sh: line 23: /home/dan/classes/rigorousSystemDesign/project/GkleeTests/../bin/gklee: No such file or directory
+
+real	0m0.001s
+user	0m0.000s
+sys	0m0.001s

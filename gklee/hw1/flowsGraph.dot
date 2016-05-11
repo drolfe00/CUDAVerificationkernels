@@ -1,0 +1,61 @@
+digraph kernel{
+kernel;
+"kernel" -> "Flow_0_0";
+Flow_0_0 [label="flow 0:true" color=green shape = rectangle];
+Branch_1 [label = <<table><tr><td>"  br i1 %12, label %13, label %29, !dbg !736, !br-S-S !737"</td></tr><tr><td>"(Slt (Add w32 (ReadLSB w32 0 tid_arr_k0_0)(Mul w32 32(ReadLSB w32 0 bid_arr_k0_0)))40)"</td></tr></table>> color = orange shape = invhouse];
+"Flow_0_0" -> "Branch_1";
+"Branch_1" -> "Flow_0_2";
+Flow_0_2 [label="flow 0:true" color=green shape = rectangle];
+"Flow_0_2" -> "return";
+}
+digraph kernel{
+kernel;
+"Branch_1" -> "Flow_0_3";
+Flow_0_3 [label="flow 0:true" color=green shape = rectangle];
+"Flow_0_3" -> "return";
+}
+digraph kernel{
+kernel;
+"Branch_1" -> "Flow_0_4";
+Flow_0_4 [label="flow 0:true" color=green shape = rectangle];
+"Flow_0_4" -> "return";
+}
+digraph kernel{
+kernel;
+"Branch_1" -> "Flow_0_5";
+Flow_0_5 [label="flow 0:true" color=green shape = rectangle];
+"Flow_0_5" -> "return";
+}
+digraph kernel{
+kernel;
+"Branch_1" -> "Flow_0_6";
+Flow_0_6 [label="flow 0:true" color=green shape = rectangle];
+"Flow_0_6" -> "return";
+}
+digraph kernel{
+kernel;
+"Branch_1" -> "Flow_0_7";
+Flow_0_7 [label="flow 0:true" color=green shape = rectangle];
+"Flow_0_7" -> "return";
+}
+digraph kernel{
+kernel;
+"Branch_1" -> "Flow_0_8";
+Flow_0_8 [label="flow 0:true" color=green shape = rectangle];
+"Flow_0_8" -> "return";
+}
+digraph kernel{
+kernel;
+"Branch_1" -> "Flow_0_9";
+Flow_0_9 [label="flow 0:true" color=green shape = rectangle];
+"Flow_0_9" -> "return";
+}
+digraph kernel{
+kernel;
+"Branch_1" -> "Flow_0_10";
+Flow_0_10 [label="flow 0:true" color=green shape = rectangle];
+"Flow_0_10" -> "return";
+}
+digraph kernel{
+kernel;
+"Branch_1" -> "Flow_0_11";

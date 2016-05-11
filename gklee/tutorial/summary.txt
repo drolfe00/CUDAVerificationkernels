@@ -1,0 +1,8 @@
+****************************************
+The 0 (pointer) argument of function _Z13device_globalPji: 
+input_array
+
+Start evaluating 1 (pointer) arguments of function _Z13device_globalPji
+
+In the kernel _Z13device_globalPji, no need to set its 2 arguments as [Tainted]
+=====================================
